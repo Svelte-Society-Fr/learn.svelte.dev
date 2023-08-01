@@ -1,5 +1,5 @@
 ---
-title: Qu'est-ce que SvelteKit?
+title: C'est quoi SvelteKit ?
 ---
 
 Alors que Svelte est un <span class="vo">[framework](SITE_SVELTE/docs/web#framework)</span> pour construire des _composants_, SvelteKit est un framework pour construire des _applications_ (aussi appelé 'metaframework' selon la personne à qui l'on s'adresse) qui résout les problèmes délicats liés à la construction d'un produit prêt à être mis en production :
@@ -16,9 +16,9 @@ Alors que Svelte est un <span class="vo">[framework](SITE_SVELTE/docs/web#framew
 - Déploiments chez différents hébergeurs
 - ...et bien plus !
 
-Les applications SvelteKit sont rendues côté serveur par défaut (comme les "applications multi-pages" (MPA) traditionnelles) pour d'excellentes performances de premier chargement de page et de référencement, mais peuvent ensuite passer à une navigation côté client (comme les "applications mono-page" (SPA) modernes) pour éviter de tout recharger inutilement (y compris le code tiers) lorsque l'utilisateur navigue. Elles peuvent fonctionner partout où JavaScript s'exécute, même si - comme nous le verrons - vos utilisateurs n'auront peut-être pas besoin d'exécuter de JavaScript du tout.
+Les applications SvelteKit sont rendues côté serveur par défaut (comme les "applications multi-pages" (<span class="vo">[MPA](SITE_SVELTE/docs/web#mpa)</span>) traditionnelles) pour d'excellentes performances de premier chargement de page et de référencement, mais peuvent ensuite passer à une navigation côté client (comme les "applications mono-page" (<span class="vo">[SPA](SITE_SVELTE/docs/web#spa)</span>) modernes) pour éviter de tout recharger inutilement (y compris le code tiers) lorsque l'utilisateur navigue. Elles peuvent fonctionner partout où JavaScript s'exécute, même si - comme nous le verrons - vos utilisateurs n'auront peut-être pas besoin d'exécuter de JavaScript du tout.
 
-Si cela vous semble compliqué, ne vous inquiétez pas : SvelteKit est le framework qui évolue avec vous ! Commencez simplement et ajoutez de nouvelles fonctionnalités au fur et à mesure de vos besoins.
+Si cela vous semble compliqué, ne vous inquiétez pas : SvelteKit est le <span class="vo">[framework](SITE_SVELTE/docs/web#framework)</span> qui évolue avec vous ! Commencez simplement et ajoutez de nouvelles fonctionnalités au fur et à mesure de vos besoins.
 
 ## Structure du projet
 
