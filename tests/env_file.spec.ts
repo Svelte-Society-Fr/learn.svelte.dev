@@ -14,11 +14,11 @@ test('.env file: no timeout error occurs when switching a tutorials without a .e
 	const iframe_locator = page.frameLocator(iframe_selector);
 
 	// wait for the iframe to load
-	await iframe_locator.getByText('Welcome!').waitFor();
+	await iframe_locator.getByText('Bienvenue !').waitFor();
 
 	// switch to another tutorial with a .env file
 	await page.click('header > h1', { delay: 200 });
-	await page.locator('button', { hasText: 'Part 4: Advanced SvelteKit' }).click({ delay: 200 });
+	await page.locator('button', { hasText: 'Partie 4: Advanced SvelteKit' }).click({ delay: 200 });
 	await page.locator('button', { hasText: 'Environment variables' }).click({ delay: 200 });
 	await page.locator('a', { hasText: '$env/static/private' }).click({ delay: 200 });
 
@@ -44,11 +44,11 @@ test('.env file: environment variables are available when switching a tutorial w
 	const iframe_locator = page.frameLocator(iframe_selector);
 
 	// wait for the iframe to load
-	await iframe_locator.getByText('Welcome!').waitFor();
+	await iframe_locator.getByText('Bienvenue !').waitFor();
 
 	// switch to another tutorial with a .env file
 	await page.click('header > h1', { delay: 200 });
-	await page.locator('button', { hasText: 'Part 4: Advanced SvelteKit' }).click({ delay: 200 });
+	await page.locator('button', { hasText: 'Partie 4: Advanced SvelteKit' }).click({ delay: 200 });
 	await page.locator('button', { hasText: 'Environment variables' }).click({ delay: 200 });
 	await page.locator('a', { hasText: '$env/dynamic/private' }).click({ delay: 200 });
 
