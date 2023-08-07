@@ -49,6 +49,7 @@
 
 	:global(.text .vo a:hover) {
 		color: var(--sk-text-3);
+		box-shadow: inset 0 -1px 0 0 var(--sk-text-4);
 	}
 
 	@media (min-width: 800px) {
