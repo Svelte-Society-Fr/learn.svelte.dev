@@ -15,7 +15,7 @@ Commençons par déclarer `unsubscribe` dans `App.svelte` :
 
 > La méthode `subscribe` retourne une fonction `unsubscribe` quand on l'exécute.
 
-Vous avez maintenant déclaré `unsubscribe`, mais vous avez toujours besoin de l'exécuter, par exemple grâce à la [méthode de cycle de vie `onDestroy`](SVELTE_SITE_URL/docs/svelte#ondestroy) :
+Vous avez maintenant déclaré `unsubscribe`, mais vous avez toujours besoin de l'exécuter, par exemple grâce à la méthode de cycle de vie `onDestroy` :
 
 ```svelte
 /// file: App.svelte

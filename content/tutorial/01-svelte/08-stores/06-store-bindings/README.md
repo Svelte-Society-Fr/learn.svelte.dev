@@ -2,7 +2,7 @@
 title: Liaisons de store
 ---
 
-Si un <span class="vo">[store](SVELTE_SITE_URL/docs/sveltejs#store)</span> est défini comme <span class="vo">_writable_</span> — c'est-à-dire qu'il a une méthode `set` — vous pouvez créer une liaison avec sa valeur, comme vous le feriez avec n'importe quel état local de composant.
+Si un <span class="vo">[store](SVELTE_SITE_URL/docs/sveltejs#store)</span> est défini comme <span class="vo">[writable](SVELTE_SITE_URL/docs/development#writable)</span> — c'est-à-dire qu'il a une méthode `set` — vous pouvez créer une liaison avec sa valeur, comme vous le feriez avec n'importe quel état local de composant.
 
 Dans cet exemple, nous avons un <span class="vo">[store](SVELTE_SITE_URL/docs/sveltejs#store)</span> d'écriture `name` et un store dérivé `greeting`. Modifiez l'élément `<input>` dans le fichier `App.svelte` :
 

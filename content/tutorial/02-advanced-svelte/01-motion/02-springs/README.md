@@ -28,4 +28,3 @@ let coords = spring({ x: 50, y: 50 }, +++{
 
 Faites bouger votre souris, et essayez de changer les curseurs pour avoir une idée de comment chaque paramètre affecte le comportement du ressort. Notez que vous pouvez ajuster les valeurs pendant que le ressort est encore en mouvement.
 
-Consultez la [documentation de référence](SVELTE_SITE_URL/docs#run-time-svelte-motion-spring) pour plus d'informations.
