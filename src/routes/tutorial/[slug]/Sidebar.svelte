@@ -73,7 +73,7 @@
 	</div>
 
 	{#if exercise.next}
-		<p><a href="/tutorial/{exercise.next.slug}">Suivant : {exercise.next.title}</a></p>
+		<p><a href="/tutorial/{exercise.next.slug}">À suivre : {exercise.next.title}</a></p>
 	{/if}
 </div>
 
