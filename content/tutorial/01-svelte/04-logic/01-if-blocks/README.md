@@ -2,9 +2,9 @@
 title: Blocs if
 ---
 
-Le HTML n'est pas prévu pour exprimer de la **logique**, comme des conditions ou des boucles. Svelte si.
+Le HTML n'est pas prévu pour exprimer de la _logique_, comme des conditions ou des boucles. Svelte si.
 
-Pour afficher conditionnellement du <span class="vo">[markup](SITE_SVELTE/docs/web#markup)</span>, nous pouvons le placer dans un bloc `if`. Ajoutons du texte qui apparaîtra lorsque le compteur `count`sera supérieur à `10` :
+Pour afficher conditionnellement du <span class="vo">[markup](SVELTE_SITE_URL/docs/web#markup)</span>, nous pouvons le placer dans un bloc `if`. Ajoutons du texte qui apparaîtra lorsque le compteur `count`sera supérieur à `10` :
 
 ```svelte
 /// file: App.svelte
