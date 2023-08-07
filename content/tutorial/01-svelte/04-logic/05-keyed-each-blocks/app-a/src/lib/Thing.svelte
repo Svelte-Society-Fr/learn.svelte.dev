@@ -1,10 +1,10 @@
 <script>
 	const emojis = {
-		apple: '🍎',
-		banana: '🍌',
-		carrot: '🥕',
-		doughnut: '🍩',
-		egg: '🥚'
+		pomme: '🍎',
+		banane: '🍌',
+		carotte: '🥕',
+		donut: '🍩',
+		oeuf: '🥚'
 	};
 
 	// le nom est mis à jour à chaque fois que la valeur de la prop change...
