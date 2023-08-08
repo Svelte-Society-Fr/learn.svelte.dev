@@ -34,7 +34,7 @@ Nous pouvons y remédier avec une action. Importer `trapFocus` de `actions.js` :
 <div class="menu" +++use:trapFocus+++>
 ```
 
-Jetons un coup d'oeil à la fonction `trapFocus` dans `actions.js`. Une fonction d'action est appelée avec un noeud `node` - le `<div class="menu">` dans notre cas - lorsque le noeud est monté dans le DOM, et peut retourner un objet d'action avec une méthode `destroy`.
+Jetons un coup d'oeil à la fonction `trapFocus` dans `actions.js`. Une fonction d'action est appelée avec un noeud `node` - le `<div class="menu">` dans notre cas - lorsque le noeud est monté dans le <span class="vo">[DOM](SVELTE_SITE_URL/docs/web#dom)</span>, et peut retourner un objet d'action avec une méthode `destroy`.
 
 Tout d'abord, nous devons ajouter un récepteur d'événements qui intercepte les pressions sur les touches de tabulation :
 
