@@ -1,5 +1,5 @@
 ---
-title: The @debug tag
+title: La balise @debug
 ---
 
 Il est parfois utile d'inspecter votre donnée au fur et à mesure qu'elle traverse votre application.

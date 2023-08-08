@@ -1,5 +1,5 @@
 ---
-title: <svelte:window> bindings
+title: Liaisons <svelte:window>
 ---
 
 Nous pouvons également créer des liaisons avec certaines propriétés de `window`, comme `scrollY` :
