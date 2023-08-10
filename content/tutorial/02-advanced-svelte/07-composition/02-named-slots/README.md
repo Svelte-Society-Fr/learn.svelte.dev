@@ -2,9 +2,7 @@
 title: Slots nommés
 ---
 
-L'exemple précédent contenait un <span class="vo">[slot](/SVELTE_SITE_URL/docs/sveltejs#slot)</span> par défaut, qui affiche l'enfant direct d'une instance de composant. Parfois vous aurez besoin de plus de contrôle sur le positionnement. Dans ces cas-là, nous pouvons utiliser des _slots nommés_.
-
-Inside `App.svelte`, we're rendering a `<Card>` component that contains `<span slot="telephone">` and others for `company` and `address`. Let's add the corresponding named slots in `Card.svelte`:
+L'exemple précédent contenait un <span class="vo">[slot](SVELTE_SITE_URL/docs/sveltejs#slot)</span> par défaut, qui affiche l'enfant direct d'une instance de composant. Parfois vous aurez besoin de plus de contrôle sur le positionnement. Dans ces cas-là, nous pouvons utiliser des _slots nommés_.
 
 Dans `App.svelte`, nous affichons un composant `<Card>` qui contient un `<span slot="telephone">` et d'autres pour `company` et `address`. Ajoutons les <span class="vo">[slots](/SVELTE_SITE_URL/docs/sveltejs#slot)</span> nommés correspondants dans `Card.svelte` :
 
