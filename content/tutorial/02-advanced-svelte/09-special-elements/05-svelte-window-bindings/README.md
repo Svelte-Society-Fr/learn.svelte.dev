@@ -19,4 +19,4 @@ La liste des propriétés compatibles avec les liaisons est la suivante :
 - `scrollY`
 - `online` — an alias for `window.navigator.onLine`
 
-Toutes sauf `scrollX` et `scrollY` sont en <span class="vo">[lecture seule](SVELTE_SITE_URL/docs/development#readonly)</span>.
+Toutes sauf `scrollX` et `scrollY` sont en lecture seule.

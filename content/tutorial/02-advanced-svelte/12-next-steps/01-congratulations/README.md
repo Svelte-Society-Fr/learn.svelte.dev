@@ -2,7 +2,7 @@
 title: Félicitations !
 ---
 
-Vous avez terminé le tutoriel de Svelte et êtes maintenant prêt.e.s à construire des applications.
+Vous avez terminé le tutoriel de Svelte et êtes maintenant prêt•e•s à construire des applications.
 
 Les deux prochaines parties du tutoriel traitent de SvelteKit, un <span class="vo">[framework](SVELTE_SITE_URL/docs/web#framework)</span> tout-en-un pour créer des applications de toutes sortes et de toutes tailles.
 

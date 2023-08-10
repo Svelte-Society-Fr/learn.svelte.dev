@@ -18,4 +18,4 @@ Comme dans l'[exercice précédent](svelte-component), nous pouvons remplacer un
 </svelte:element>+++
 ```
 
-La valeur `this` peut être n'importe quelle chaîne de caractères, ou une valeur <span class="vo">[falsy](SVELTE_SITE_URL/docs/javascript#falsy-truthy-falsy)</span> — si la valeur est <span class="vo">[falsy](SVELTE_SITE_URL/docs/javascript#falsy-truthy-falsy)</span>, aucun composant n'est rendu.
+La valeur `this` peut être n'importe quelle chaîne de caractères, ou une valeur <span class="vo">[falsy](SVELTE_SITE_URL/docs/javascript#falsy-truthy-falsy)</span> — si la valeur est falsy, aucun composant n'est rendu.

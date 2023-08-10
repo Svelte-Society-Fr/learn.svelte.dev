@@ -13,4 +13,4 @@ Une approche est d'utiliser `console.log(...)` dans votre <span class="vo">[mark
 <h1>Bonjour {user.firstname}!</h1>
 ```
 
-Maintenant, si vous ouvrez vous outils de développement et commencez à interagir avec les éléments `<input>`, vous déclencherez le <span class='vo'>[debugger](SVELTE_SITE_URL/docs/development#bug)</span> à chaque fois que la valeur de `user` change.
+Maintenant, si vous ouvrez vous outils de développement et commencez à interagir avec les éléments `<input>`, vous déclencherez le <span class='vo'>[debugger](SVELTE_SITE_URL/docs/development#debugger)</span> à chaque fois que la valeur de `user` change.
