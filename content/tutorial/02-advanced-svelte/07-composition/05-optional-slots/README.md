@@ -2,7 +2,7 @@
 title: Vérifier le contenu des slots
 ---
 
-Vous avez besoin de contrôler chaque partie de votre composant en fonction de si du contenu <span class="vo">[slotté](SVELTE_SITE_URL/docs/sveltejs#slot)</span> est fourni. Par exemple, si nous enlevons le `<header>` de `App.svelte`...
+Dans certains cas, vous aurez peut-être besoin de contrôler des éléments de votre composant en fonction de si du contenu <span class="vo">[slotté](SVELTE_SITE_URL/docs/sveltejs#slot)</span> a été fourni. Par exemple, si nous enlevons le `<header>` de `App.svelte`...
 
 ```svelte
 /// file: App.svelte
