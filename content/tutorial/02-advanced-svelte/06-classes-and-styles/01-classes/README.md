@@ -2,7 +2,7 @@
 title: La directive de classe
 ---
 
-Comme pour tous les autres attributs, vous pouvez spécifier de classes avec un attribut JavaScript. Ici, nous pourrions ajouter une classe `flipped` à la carte :
+Comme pour tous les autres attributs, vous pouvez spécifier des classes avec un attribut JavaScript. Ici, nous pourrions ajouter une classe `flipped` à la carte :
 
 ```svelte
 /// file: App.svelte
