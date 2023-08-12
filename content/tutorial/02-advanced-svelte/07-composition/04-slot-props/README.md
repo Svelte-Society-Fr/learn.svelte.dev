@@ -50,4 +50,4 @@ Enfin, débarrassez-vous de la variable de base, dont nous n'avons plus besoin :
 </script>
 ```
 
-> Les <span class="vo">[slots](SVELTE_SITE_URL/docs/sveltejs#slot)</span> nommés peut aussi avoir des <span class="vo">[props](SVELTE_SITE_URL/docs/sveltejs#props)</span>; utilisez la directive `let` sur un élément avec un attribut `slot=...` à la place du composant lui-même.
+> Les <span class="vo">[slots](SVELTE_SITE_URL/docs/sveltejs#slot)</span> nommés peuvent aussi avoir des <span class="vo">[props](SVELTE_SITE_URL/docs/sveltejs#props)</span> ; utilisez la directive `let` sur un élément avec un attribut `slot=...` à la place du composant lui-même.
