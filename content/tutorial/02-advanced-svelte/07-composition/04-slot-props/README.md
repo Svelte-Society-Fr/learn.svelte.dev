@@ -1,5 +1,5 @@
 ---
-title: Slot props
+title: Props de slot
 ---
 
 Les composants peuvent _retourner_ de la donnée au contenu <span class="vo">[slotté](SVELTE_SITE_URL/docs/sveltejs#slot)</span> via des _propriétés de slot_, ou _slot props_. Dans cette application, nous avons une liste de noms de couleurs CSS. Il est possible de les filtrer avec l'`<input>`.
