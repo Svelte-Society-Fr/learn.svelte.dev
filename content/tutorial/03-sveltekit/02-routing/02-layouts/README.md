@@ -2,7 +2,7 @@
 title: Layouts
 ---
 
-Les différentes routes de votre application partageront souvent une interface utilisateur commune. Au lieu de le répéter dans chaque composant `+page.svelte`, nous pouvons utiliser un composant `+layout.svelte` qui s'applique à toutes les routes dans le même répertoire.
+Les différentes routes de votre application partageront souvent une interface utilisateur commune. Au lieu de la répéter dans chaque composant `+page.svelte`, nous pouvons utiliser un composant `+layout.svelte` qui s'applique à toutes les routes dans le même répertoire.
 
 Dans cette application, nous avons deux routes, `src/routes/+page.svelte` et `src/routes/about/+page.svelte`, qui contiennent la même interface de navigation. Créons un nouveau fichier, `src/routes/+layout.svelte`...
 
