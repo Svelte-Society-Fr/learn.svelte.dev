@@ -28,7 +28,7 @@ Sur la droite, dans l'arborescence des fichiers, vous verrez l'ensemble des fich
 
 > Notez qu'il spécifie également `"type" : "module", ce qui signifie que les fichiers `.js` sont traités comme des modules JavaScript natifs par défaut, plutôt que comme le format CommonJS.
 
-`svelte.config.js` contient la configuration de votre projet. Nous n'avons pas besoin de nous préoccuper de ce fichier pour l'instant, mais si vous êtes curieux, [visitez la documentation] (https://kit.svelte.dev/docs/configuration).
+`svelte.config.js` contient la configuration de votre projet. Nous n'avons pas besoin de nous préoccuper de ce fichier pour l'instant, mais si vous êtes curieux, [visitez la documentation](https://kit.svelte.dev/docs/configuration).
 
 `vite.config.js` contient la configuration de [Vite](https://vitejs.dev/). Comme SvelteKit utilise Vite, vous pouvez utiliser les [fonctionnalités de Vite](https://vitejs.dev/guide/features.html) comme le [hot reload](SVELTE_SITE_URL/docs/web#hmr), le support de TypeScript, la gestion des fichiers statiques et ainsi de suite.
 
