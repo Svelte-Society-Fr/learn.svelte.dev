@@ -39,7 +39,7 @@
 		{/each}
 	</ul>
 
-	<p>Encore {remaining}</p>
+	<p>Encore {remaining} tâches</p>
 
 	<button on:click={add}>
 		Ajouter
