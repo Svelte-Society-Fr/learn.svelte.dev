@@ -2,7 +2,7 @@
 title: L'élément <form>
 ---
 
-Dans le [chapitre sur le chargement](page-data), nous avons vu comment charger de la donnée depuis le serveur vers le navigateur. Parfois, il est nécessaire d'envoyer de la donnée dans l'autre direction, et c'est là que les éléments de formulaires `<form>` - la méthode naturelle du web pour soumettre de la donnée — entrent en jeu.
+Dans le [chapitre sur le chargement](page-data), nous avons vu comment charger de la donnée depuis le serveur vers le navigateur. Parfois, il est nécessaire d'envoyer de la donnée dans l'autre direction, et c'est là que les éléments de formulaires `<form>` — la méthode standard du web pour soumettre de la donnée — entrent en jeu.
 
 Construisons une application de tâches à faire. Nous avons déjà une base de données en mémoire en place dans `src/lib/server/database.js`, et notre fonction `load` dans `src/routes/+page.server.js` utilise l'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> <span class="vo">[`cookies`](KIT_SITE_URL/docs/load#cookies-and-headers)</span> afin d'avoir une liste de tâches à faire par personne, mais nous avons besoin d'un `<form>` pour créer de nouvelles tâches :
 
@@ -23,7 +23,7 @@ Construisons une application de tâches à faire. Nous avons déjà une base de 
 <ul class="todos">
 ```
 
-Si nous entrons quelque dans l'`<input>` et que nous appuyons sur Entrée, le navigateur fait une requête POST (grâce à l'attribut `method="POST"`) sur la page actuelle. Mais cela renvoie une erreur, car nous n'avons pas créé d'_action_ côté serveur pour gérer la requête POST. Faisons cela maintenant :
+Si nous saisissons quelque chose dans l'`<input>` et que nous appuyons sur Entrée, le navigateur fait une requête POST (grâce à l'attribut `method="POST"`) sur la page actuelle. Mais cela renvoie une erreur, car nous n'avons pas créé d'_action_ côté serveur pour gérer la requête POST. Faisons cela maintenant :
 
 ```js
 /// file: src/routes/+page.server.js

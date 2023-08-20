@@ -27,7 +27,7 @@ export function load() {
 }
 ```
 
-> Dans le cadre de ce tutoriel, nous importons la donnée depuis `src/routes/blog/data.js`. Dans une vrai application, vous chargeriez plutôt cette donnée depuis une base de données ou un CMS, mais pour le moment nous le faisons de cette manière.
+> Dans le cadre de ce tutoriel, nous importons la donnée depuis `src/routes/blog/data.js`. Dans une vraie application, vous chargeriez plutôt cette donnée depuis une base de données ou un CMS, mais pour le moment nous le faisons de cette manière.
 
 Nous pouvons accéder à cette donnée dans `src/routes/blog/+page.svelte` via la <span class="vo">[prop](SVELTE_SITE_URL/docs/sveltejs#props)</span> `data` :
 

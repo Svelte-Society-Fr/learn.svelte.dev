@@ -3,7 +3,7 @@ title: Données de layout
 path: /blog
 ---
 
-De la même manière que les fichiers `+layout.svelte` crée de l'interface pour chaque route enfant, les fichiers `+layout.server.js` chargent de la donnée pour chaque route enfant.
+De la même manière que les fichiers `+layout.svelte` créent une partie de l'interface pour chaque route enfant, les fichiers `+layout.server.js` chargent de la donnée pour chaque route enfant.
 
 Supposez que nous voulions ajouter une barre latérale "plus de billets" à notre page de billet de blog. Nous _pourrions_ renvoyer `summaries` depuis la fonction `load` de `src/routes/blog/[slug]/+page.server.js`, comme nous le faisons dans `src/routes/blog/+page.server.js`, mais cela serait répétitif.
 

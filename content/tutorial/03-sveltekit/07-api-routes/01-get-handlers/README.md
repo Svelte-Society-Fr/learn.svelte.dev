@@ -2,7 +2,7 @@
 title: Fonctions GET
 ---
 
-SvelteKit vous permet de créer plus que juste des pages. Nous pouvons aussi créer des _routes d'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span>_ en ajoutant un fichier `+server.js` qui exporte des fonctions correspondant aux méthodes HTTP : `GET`, `PUT`, `POST`, `PATCH`, `DELETE`.
+SvelteKit vous permet de créer plus que des simples pages. Nous pouvons aussi créer des _routes d'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span>_ en ajoutant un fichier `+server.js` qui exporte des fonctions correspondant aux méthodes HTTP : `GET`, `PUT`, `POST`, `PATCH`, `DELETE`.
 
 Cette application requête de la donnée depuis une route d'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> lorsque vous cliquez sur le bouton. Créez cette route en ajoutant un fichier `src/routes/roll/+server.js` :
 
