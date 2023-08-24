@@ -1,21 +1,21 @@
 ---
-title: Universal load functions
+title: Fonctions load universelles
 ---
 
-In the [previous section on loading](page-data) we loaded data from the server using `+page.server.js` and `+layout.server.js` files. This is very convenient if you need to do things like getting data directly from a database, or reading cookies.
+Dans le [précédent chapitre sur le chargement](page-data), nous avons chargé de la donnée depuis le serveur en utilisant les fichiers `+page.server.js` et `+layout.server.js`. Cette méthode est très pratique si avez besoin de faire des choses comme accéder directement à une base de données, ou lire des cookies.
 
-Sometimes it doesn't make sense to load data from the server when doing a client-side navigation. For example:
+Parfois, charger de la donnée depuis le serveur lors d'une navigation côté n'a pas vraiment de sens. Par exemple :
 
-- You're loading data from an external API
-- You want to use in-memory data if it's available
-- You want to delay navigation until an image has been preloaded, to avoid pop-in
-- You need to return something from `load` that can't be serialized (SvelteKit uses [devalue](https://github.com/Rich-Harris/devalue) to turn server data into JSON), such as a component or a store
+- Vous chargez de la donnée depuis une <span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> externe
+- Vous voulez utiliser de la donnée en mémoire du navigateur, si disponible
+- Vous voulez retarder la navigation jusqu'à ce qu'une image ait été chargée, pour éviter de la faire apparaître brusquement
+- Vous avez besoin de renvoyer quelque chose depuis `load` qui ne peut pas être sérialisé (SvelteKit utilise [devalue](https://github.com/Rich-Harris/devalue) pour transformer la donnée du serveur en <span class="vo">[JSON](SVELTE_SITE_URL/docs/web#json)</span>), comme un composant ou un <span class="vo">[store](SVELTE_SITE_URL/docs/sveltejs#store)</span>
 
-In this exercise, we're dealing with the latter case. The server `load` functions in `src/routes/red/+page.server.js`, `src/routes/green/+page.server.js` and `src/routes/blue/+page.server.js` return a `component` constructor, which can't be serialized like data. If you navigate to `/red`, `/green` or `/blue`, you'll see a 'Data returned from `load` ... is not serializable' error in the terminal.
+Dans cet exercice, nous avons à faire au dernier cas. Les fonction `load` de serveur dans `src/routes/red/+page.server.js`, `src/routes/green/+page.server.js` et `src/routes/blue/+page.server.js` renvoient un constructeur `component`, qui ne peut pas être sérialisé comme de la donnée. Si vous naviguez vers `/red`, `/green` ou `/blue`, vous verrez apparaître dans le terminal l'erreur "Data returned from `load` ... is not serializable" (_La donnée ... renvoyée par `load` n'est pas sérialisable_).
 
-To turn the server `load` functions into universal `load` functions, rename each `+page.server.js` file to `+page.js`. Now, the functions will run on the server during server-side rendering, but will also run in the browser when the app hydrates or the user performs a client-side navigation.
+Pour transformer les fonctions `load` de serveur en fonctions `load` universelles, renommez chaque fichier `+page.server.js` en `+page.js`. Désormais, les fonctions `load` seront exécutées sur le serveur lors du rendu côté serveur, mais elles seront également exécutées dans le navigateur lorsque l'application est hydratée, ou lorsque l'utilisateur ou l'utilisatrice déclenche une navigation côté client.
 
-We can now use the `component` returned from these `load` functions like any other value, including in `src/routes/+layout.svelte`:
+Nous pouvons maintenant utiliser la valeur `component` renvoyée par ces fonctions `load` comme n'importe quelle autre valeur, même dans `src/routes/+layout.svelte` :
 
 ```svelte
 /// file: src/routes/+layout.svelte
@@ -23,10 +23,10 @@ We can now use the `component` returned from these `load` functions like any oth
 	class:has-color={!!$page.data.color}
 	style:background={$page.data.color ?? 'var(--bg-2)'}
 >
-	<a href="/">home</a>
-	<a href="/red">red</a>
-	<a href="/green">green</a>
-	<a href="/blue">blue</a>
+	<a href="/">accueil</a>
+	<a href="/red">rouge</a>
+	<a href="/green">vert</a>
+	<a href="/blue">bleu</a>
 
 +++	{#if $page.data.component}
 		<svelte:component this={$page.data.component} />
@@ -34,4 +34,4 @@ We can now use the `component` returned from these `load` functions like any oth
 </nav>
 ```
 
-Read the [documentation](https://kit.svelte.dev/docs/load#universal-vs-server) to learn more about the distinction between server `load` functions and universal `load` functions, and when to use which.
+Rendez-vous dans la [documentation](KIT_SITE_URL/docs/load#universal-vs-server) pour en apprendre plus sur la différence entre une fonction `load` de serveur et une fonction `load` universelle, ainsi que les cas d'usage de chacune.
