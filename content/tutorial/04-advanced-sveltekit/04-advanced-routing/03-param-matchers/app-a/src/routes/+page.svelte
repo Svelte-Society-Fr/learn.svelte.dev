@@ -1,1 +1,1 @@
-<h1>color picker</h1>
+<h1>palette de couleur</h1>

@@ -1,5 +1,5 @@
 <slot />
 
 <form method="POST" action="/logout">
-	<button>log out</button>
+	<button>se déconnecter</button>
 </form>

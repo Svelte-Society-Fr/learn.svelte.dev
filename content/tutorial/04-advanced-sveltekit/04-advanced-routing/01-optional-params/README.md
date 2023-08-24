@@ -1,28 +1,28 @@
 ---
-title: Optional parameters
+title: Paramètres optionels
 ---
 
-In the first chapter on [routing](/tutorial/pages), we learned how to create routes with [dynamic parameters](/tutorial/params).
+Dans le premier chapitre sur le [routing](/tutorial/pages), nous avons vu comment créer des route avec des [paramètres dynamiques](/tutorial/params).
 
-Sometimes it's helpful to make a parameter optional. A classic example is when you use the pathname to determine the locale — `/fr/...`, `/de/...` and so on — but you also want to have a default locale.
+Il est parfois utile de rendre un paramètre optionnel. Un exemple classique est lorsque vous utilisez un chemin pour déterminer la langue - `/fr/...`, `/de/...` et ainsi de suite — mais vous souhaitez également avoir une langue par défaut.
 
-To do that, we use double brackets. Rename the `[lang]` directory to `[[lang]]`.
+Pour faire cela, nous utilisons les crochets doubles. Renommez le dossier `[lang]` en `[[lang]]`.
 
-The app now fails to build, because `src/routes/+page.svelte` and `src/routes/[[lang]]/+page.svelte` would both match `/`. Delete `src/routes/+page.svelte`. (You may need to reload the app to recover from the error page).
+L'application ne parvient plus à compiler, car les routes `src/routes/+page.svelte` et `src/routes/[[lang]]/+page.svelte` satisfont toutes les deux `/`. Supprimez la route `src/routes/+page.svelte` (il est possible que vous ayez besoin de recharger l'application pour annuler la page d'erreur).
 
-Lastly, edit `src/routes/[[lang]]/+page.server.js` to specify the default locale:
+Enfin, modifiez `src/routes/[[lang]]/+page.server.js` pour préciser la langue par défaut :
 
 ```js
 /// file: src/routes/[[lang]]/+page.server.js
 const greetings = {
 	en: 'hello!',
 	de: 'hallo!',
-	fr: 'bonjour!'
+	fr: 'bonjour !'
 };
 
 export function load({ params }) {
 	return {
-		greeting: greetings[params.lang +++?? 'en'+++]
+		greeting: greetings[params.lang +++?? 'fr'+++]
 	};
 }
 ```

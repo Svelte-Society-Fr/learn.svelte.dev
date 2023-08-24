@@ -1,3 +1,3 @@
-<h1>app</h1>
+<h1>application</h1>
 
-<p>this is the app</p>
+<p>ceci est l'application</p>

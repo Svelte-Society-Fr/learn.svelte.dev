@@ -1,16 +1,16 @@
 ---
-title: Breaking out of layouts
+title: Ignorer des layouts
 ---
 
-Ordinarily, a page inherits every layout above it, meaning that `src/routes/a/b/c/+page.svelte` inherits four layouts:
+D'habitude, une page hérite de tous ses <span class="vo">[layouts](SVELTE_SITE_URL/docs/web#layout)</span> parents, ce qui implique que la route `src/routes/a/b/c/+page.svelte` hérite de quatre <span class="vo">[layouts](SVELTE_SITE_URL/docs/web#layout)</span> :
 
 - `src/routes/+layout.svelte`
 - `src/routes/a/+layout.svelte`
 - `src/routes/a/b/+layout.svelte`
 - `src/routes/a/b/c/+layout.svelte`
 
-Occasionally, it's useful to break out of the current layout hierarchy. We can do that by adding the `@` sign followed by the name of the parent segment to 'reset' to — for example `+page@b.svelte` would put `/a/b/c` inside `src/routes/a/b/+layout.svelte`, while `+page@a.svelte` would put it inside `src/routes/a/+layout.svelte`.
+Occasionnellement, c'est utile d'ignorer la hiérarchie de <span class="vo">[layouts](SVELTE_SITE_URL/docs/web#layout)</span> courante. Nous pouvons faire cela en ajoutant le symbole `@` suivi du nom du segment parent servant de nouvelle "base" — par exemple `+page@b.svelte` assignerait `/a/b/c` au layout `src/routes/a/b/+layout.svelte`, tandis que `+page@a.svelte` l'assignerait à `src/routes/a/+layout.svelte`.
 
-Let's reset it all the way to the root layout, by renaming it to `+page@.svelte`.
+Réinitialisons le <span class="vo">[layout](SVELTE_SITE_URL/docs/web#layout)</span> jusqu'au layout racine, en renommant le fichier `+page@.svelte`.
 
-> The root layout applies to every page of your app, you cannot break out of it.
+> Le <span class="vo">[layout](SVELTE_SITE_URL/docs/web#layout)</span> racine s'applique à toutes les pages de votre application, vous ne pouvez pas y échapper.
