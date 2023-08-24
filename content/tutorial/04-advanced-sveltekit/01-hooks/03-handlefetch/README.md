@@ -4,8 +4,8 @@ title: handleFetch
 
 L'objet `event` a une méthode `fetch` qui se comporte comme l'[API Fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) standard, mais avec des super pouvoirs :
 
-- elle peut être utilisée pour faire des requêtes authentifiées sur le serveur, puisqu'elle hérite des <span class="vo">[headers](SVELTE_SITE_URL/docs/web/header)</span> `cookie` et `authorization` de la requête entrante
-- elle peut faire des requêtes relatives sur le serveur (normalement `fetch` impose une URL avec une origine lorsqu'utilisée dans un contexte serveur)
+- elle peut être utilisée pour effectuer des requêtes authentifiées sur le serveur, puisqu'elle hérite des <span class="vo">[headers](SVELTE_SITE_URL/docs/web/header)</span> `cookie` et `authorization` de la requête entrante
+- elle peut être utilisée pour effectuer des requêtes relatives sur le serveur (normalement `fetch` impose une URL avec une origine lorsqu'utilisée dans un contexte serveur)
 - les requêtes internes (par ex. pour les routes `+server.js`) sont directement consommées par les fonctions adéquates sur le serveur, sans avoir besoin de faire un appel HTTP supplémentaire
 
 Son comportement peut être modifié avec le <span class="vo">[hook](SVELTE_SITE_URL/docs/sveltejs#hook)</span> `handleFetch`, qui par défaut ressemble à ceci :

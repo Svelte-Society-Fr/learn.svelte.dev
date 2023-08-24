@@ -28,9 +28,9 @@ Vous pouvez mettre l'attribut sur des liens individuels, ou sur tout élément q
 
 Vous pouvez aller plus dans la personnalisation de ce comportement en précisant l'une des valeurs suivantes pour l'attribut :
 
-- `"hover"` (par défaut, correspond à `"tap"` sur mobile)
+- `"hover"` — au survol, valeur par défaut (correspond à `"tap"` sur mobile)
 - `"tap"` — commence le pré-chargement uniquement au `"tap"`
-- `"off"` — désactivement le pré-chargement
+- `"off"` — désactive le pré-chargement
 
 Utiliser `data-sveltekit-preload-data` peut parfois résulter à des faux positifs — c'est-à-dire charger la donnée en anticipation d'une navigation qui finalement n'arrive jamais — ce qui peut être indésirable. L'alternative `data-sveltekit-preload-code` vous permet de pré-charger le JavaScript requis pour une route donnée sans en charger la donnée. Cet attribut peut avoir les valeurs suivantes :
 

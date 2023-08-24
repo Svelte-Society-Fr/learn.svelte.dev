@@ -25,7 +25,6 @@ Notez que nous n'affichons _pas_ le message d'erreur aux utilisateurs et utilisa
 ```
 
 Dans certaines situations, vous pourriez vouloir personnaliser cet objet. Pour faire cela, vous pouvez renvoyer un objet depuis `handleError` :
-In some situations you may want to customise this object. To do so, you can return an object from `handleError`:
 
 ```js
 /// file: src/hooks.server.js

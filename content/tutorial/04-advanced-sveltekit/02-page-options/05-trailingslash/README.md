@@ -4,7 +4,7 @@ title: trailingSlash
 
 Deux URLs comme `/foo` et `/foo/` peuvent se ressembler, mais sont en vérité différentes. Une URL relative comme `./bar` sera traitée pour pointer vers `/bar` dans le premier cas, et vers `/foo/bar` dans le deuxième, et les moteurs de recherches les traiteront comme des points d'entrée différents, dégradant votre référencement.
 
-Pour simplifier, être approximatif sur ces slashs de fin d'URL (ou <span class="vo">[trailing slashs](SVELTE_SITE_URL/docs/web#trailing-slash)</span>). Par défaut, SvelteKit supprime les trailing slashs, ce qui implique qu'une requête vers `/foo/` sera en réalité redirigée vers `/foo`.
+Pour simplifier, être approximatif sur ces slashs de fin d'URL (ou <span class="vo">[trailing slashs](SVELTE_SITE_URL/docs/web#trailing-slash)</span>) est une mauvaise pratique. Par défaut, SvelteKit supprime les trailing slashs, ce qui implique qu'une requête vers `/foo/` sera en réalité redirigée vers `/foo`.
 
 Si à la place vous souhaitez vous assurer qu'un <span class="vo">[trailing slashs](SVELTE_SITE_URL/docs/web#trailing-slash)</span> est toujours présent, vous pouvez préciser l'option `trailingSlash` en conséquence :
 
