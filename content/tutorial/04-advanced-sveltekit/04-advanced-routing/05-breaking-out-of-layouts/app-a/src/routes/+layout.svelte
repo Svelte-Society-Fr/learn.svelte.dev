@@ -1,5 +1,5 @@
 <nav>
-	<a href="/">home</a>
+	<a href="/">accueil</a>
 	<a href="/a">a</a>
 	<a href="/a/b">a/b</a>
 	<a href="/a/b/c">a/b/c</a>

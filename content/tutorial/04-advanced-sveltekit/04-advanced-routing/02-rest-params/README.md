@@ -1,14 +1,14 @@
 ---
-title: Rest parameters
+title: Paramètres de reste
 path: /how
 focus: /src/routes/[path]/+page.svelte
 ---
 
-To match an unknown number of path segments, use a `[...rest]` parameter, so named for its resemblance to [rest parameters in JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters).
+Pour cibler un nombre indéfini de segments, utilisez un paramètre `[...rest]`, appelé ainsi pour sa ressemblance avec les [paramètres de reste en JavaScript](https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Functions/rest_parameters).
 
-Rename `src/routes/[path]` to `src/routes/[...path]`. The route now matches any path.
+Renommez `src/routes/[path]` en `src/routes/[...path]`. La route cible maintenant n'importe quel chemin.
 
-> Other, more specific routes will be tested first, making rest parameters useful as 'catch-all' routes. For example, if you needed a custom 404 page for pages inside `/categories/...`, you could add these files:
+> D'autres routes, plus spécifiques, seront d'abord testées, rendant les paramètres de reste efficaces en tant que routes "attrape-tout". Par exemple, si vous aviez besoin d'une page 404 personnalisée dans `/categories/...`, vous pourriez ajouter ces fichiers :
 >
 > ```diff
 > src/routes/
@@ -21,6 +21,6 @@ Rename `src/routes/[path]` to `src/routes/[...path]`. The route now matches any 
 > +│ │ └ +page.server.js
 > ```
 >
-> Inside the `+page.server.js` file, `throw error(404)` inside `load`.
+> dans le fichier `+page.server.js`, ajoutez `throw error(404)` dans la fonction `load`.
 
-Rest parameters do _not_ need to go at the end — a route like `/items/[...path]/edit` or `/items/[...path].json` is totally valid.
+Les paramètres de reste n'ont _pas_ besoin d'être définis en dernier — une route comme `/items/[...path]/edit` ou `/items/[...path].json` est totalement valide.

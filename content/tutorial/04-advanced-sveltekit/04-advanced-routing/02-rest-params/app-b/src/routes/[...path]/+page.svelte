@@ -1,7 +1,7 @@
 <script>
 	import { page } from '$app/stores';
 
-	let words = ['how', 'deep', 'does', 'the', 'rabbit', 'hole', 'go'];
+	let words = ['on', 'descend', 'avec','le',  'lapin', 'blanc' ,'au', 'fond' ,'du', 'gouffre'];
 
 	$: depth = $page.params.path.split('/').filter(Boolean).length;
 	$: next = depth === words.length ? '/' : `/${words.slice(0, depth + 1).join('/')}`;
