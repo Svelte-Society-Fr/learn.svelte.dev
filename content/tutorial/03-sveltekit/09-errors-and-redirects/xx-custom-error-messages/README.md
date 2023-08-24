@@ -49,6 +49,6 @@ export function handleError(+++{ error }+++) {
 
 Vous pourriez aussi envoyer des requêtes vers votre système d'analyse d'erreurs dans ces <span class="vo">[hooks](SVELTE_SITE_URL/docs/sveltejs#hook)</span>.
 
-Notez que vou pouvez renvoyer plus qu'un message d'erreur si vous le souhaitez. Tout objet que vous renverrez sera disponible dans `$page.error`, la seule contrainte étant la présence d'un champ `message`. Vous pouvez en apprendre plus sur tout ceci (et comment rendre le tout typé !) dans [le chapitre traitant des erreurs de la documentation](KIT_SITE_URL/docs/errors).
+Notez que vous pouvez renvoyer plus qu'un message d'erreur si vous le souhaitez. Tout objet que vous renverrez sera disponible dans `$page.error`, la seule contrainte étant la présence d'un champ `message`. Vous pouvez en apprendre plus sur tout ceci (et comment rendre le tout typé !) dans [le chapitre traitant des erreurs de la documentation](KIT_SITE_URL/docs/errors).
 
 > Lorsque vous gérez des erreurs, faites attention à ne pas supposer que ce sont des objets `Error`, n'importe quoi peut être levé. Faites également attention à ne pas exposer de la donnée sensible en relayant trop d'informations

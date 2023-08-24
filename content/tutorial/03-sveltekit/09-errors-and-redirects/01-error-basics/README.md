@@ -29,4 +29,4 @@ Lorsque vous levez une erreur attendue, vous dites à SvelteKit "ne t'en fais pa
 > Dans un prochain chapitre, nous verrons comment personnaliser la gestion des erreurs en utilisant le <span class="vo">[hook](SVELTE_SITE_URL/docs/sveltejs#hook)</span>
 `handleError`.
 
-Si vous cliquez sur les liens de cette application, vous remarquerez une différence importante : le message de l'erreur attendue est affiché à l'utilisateur, tandis que le message de l'erreur inattendue est remplacé par un message générique "Internal Error" et un code 500. Il courant de faire cela car les messages d'erreur peuvent contenir des données sensibles.
+Si vous cliquez sur les liens de cette application, vous remarquerez une différence importante : le message de l'erreur attendue est affiché à l'utilisateur, tandis que le message de l'erreur inattendue est remplacé par un message générique "Internal Error" et un code 500. Il est courant de faire cela car les messages d'erreur peuvent contenir des données sensibles.
