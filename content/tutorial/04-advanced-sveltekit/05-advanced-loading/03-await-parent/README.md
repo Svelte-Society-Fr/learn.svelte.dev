@@ -1,12 +1,12 @@
 ---
-title: Using parent data
+title: Utiliser la donnée parente
 ---
 
-As we saw in the introduction to [layout data](/tutorial/layout-data), `+page.svelte` and `+layout.svelte` components have access to everything returned from their parent `load` functions.
+Comme nous l'avons vu dans l'introduction à la [donnée des layouts](/tutorial/layout-data), les composants `+page.svelte` et `+layout.svelte` ont accès à tout ce qui renvoyé par leurs fonctions `load` parentes.
 
-Occasionally it's useful for the `load` functions themselves to access data from their parents. This can be done with `await parent()`.
+Il est parfois utile que les fonctions `load` elles-mêmes aient accès à la donnée de leurs parents. Cela peut être fait avec `await parent()`.
 
-To show how it works, we'll sum two numbers that come from different `load` functions. First, return some data from `src/routes/+layout.server.js`:
+Pour montrer comment cela fonctionne, nous allons additionner deux nombres qui viennent de fonctions `load` différentes. D'abord, renvoyez de la donnée depuis `src/routes/+layout.server.js` :
 
 ```js
 /// file: src/routes/+layout.server.js
@@ -15,7 +15,7 @@ export function load() {
 }
 ```
 
-Then, get that data in `src/routes/sum/+layout.js`:
+Puis, récupérer cette donnée dans `src/routes/sum/+layout.js` :
 
 ```js
 /// file: src/routes/sum/+layout.js
@@ -25,9 +25,9 @@ export async function load(+++{ parent }+++) {
 }
 ```
 
-> Notice that a [universal](/tutorial/universal-load-functions) `load` function can get data from a parent _server_ `load` function. The reverse is not true — a server load function can only get parent data from another server load function.
+> Il est important que noter qu'une fonction `load` [universelle](/tutorial/universal-load-functions) peut accéder à de la donnée parente depuis une fonction `load` de _serveur_. L'inverse n'est pas possible — une fonction `load` de serveur peut uniquement accéder à la donnée parente d'une autre fonction `load` de serveur.
 
-Finally, in `src/routes/sum/+page.js`, get parent data from both `load` functions:
+Enfin, dans `src/routes/sum/+page.js`, récupérer la donnée parente depuis les deux fonctions `load` :
 
 ```js
 /// file: src/routes/sum/+page.js
@@ -37,4 +37,4 @@ export async function load(+++{ parent }+++) {
 }
 ```
 
-> Take care not to introduce waterfalls when using `await parent()`. If you can `fetch` other data that is not dependent on parent data, do that first.
+> Faites attention à ne pas introduire de cascades de chargement qui ralentiraient le chargement de vos pages lorsque vous utilisez `await parent()`. Si vous pouvez `fetch` une autre donnée qui ne dépend pas de la donnée parent, faites-le en premier.
