@@ -2,22 +2,22 @@
 title: $env/static/private
 ---
 
-Environment variables — like API keys and database credentials — can be added to a `.env` file, and they will be made available to your application.
+Les variables d'environnement — comme les clés d'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> et les informations de connexion à une base de données — peuvent être ajoutées à un fichier `.env`, et seront rendues disponibles dans votre application.
 
-> You can also use `.env.local` or `.env.[mode]` files — see the [Vite documentation](https://vitejs.dev/guide/env-and-mode.html#env-files) for more information. Make sure you add any files containing sensitive information to your `.gitignore` file!
+> Vous pouvez aussi utiliser des fichiers `.env.local` ou `.env.[mode]` — voir la [documentation de Vite](https://vitejs.dev/guide/env-and-mode.html#env-files) (en anglais) pour plus d'informations. Faites bien attention à ajouter les fichiers contenant des informations sensibles à votre fichier `.gitignore` !
 >
-> Environment variables in `process.env` are also available via `$env/static/private`.
+> Les variables d'environnement dans `process.env` sont aussi rendues disponibles via `$env/static/private`.
 
-In this exercise, we want to allow the user to enter the website if they know the correct passphrase, using an environment variable.
+Dans cet exercice, nous voulons autoriser l'utilisateur ou l'utilisatrice à accéder au site si il ou elle connait le bon mot de passe, en utilisant une variable d'environnement.
 
-First, in `.env`, add a new environment variable:
+D'abord, dans `.env`, ajoutez une nouvelle variable d'environnement :
 
 ```env
 /// file: .env
-PASSPHRASE=+++"open sesame"+++
+PASSPHRASE=+++"sesame ouvre-toi"+++
 ```
 
-Open `src/routes/+page.server.js`. Import `PASSPHRASE` from `$env/static/private` and use it inside the [form action](/tutorial/the-form-element):
+Ouvrez `src/routes/+page.server.js`. Importez `PASSPHRASE` depuis `$env/static/private` et servez-vous en dans l'[action de formulaire](/tutorial/the-form-element) :
 
 ```js
 /// file: src/routes/+page.server.js
@@ -49,13 +49,13 @@ export const actions = {
 };
 ```
 
-The website is now accessible to anyone who knows the correct passphrase.
+Le site est maintenant accessible à toute personne connaissant le mot de passe.
 
-## Keeping secrets
+## Garder des secrets
 
-It's important that sensitive data doesn't accidentally end up being sent to the browser, where it could easily be stolen by hackers and scoundrels.
+Il est primordial que de la donnée sensible ne se retrouve pas accidentellement envoyée au navigateur, où elle serait très facilement volée par des hackers et autres canailles.
 
-SvelteKit makes it easy to prevent this from happening. Notice what happens if we try to import `PASSPHRASE` into `src/routes/+page.svelte`:
+SvelteKit permet d'empêcher cela très facilement. Regardez ce qu'il se produit si nous essayons d'importer `PASSPHRASE` dans `src/routes/+page.svelte` :
 
 ```svelte
 /// file: src/routes/+page.svelte
@@ -65,28 +65,28 @@ SvelteKit makes it easy to prevent this from happening. Notice what happens if w
 </script>
 ```
 
-An error overlay pops up, telling us that `$env/static/private` cannot be imported into client-side code. It can only be imported into server modules:
+Une erreur apparaît, nous informant que `$env/static/private` ne peut pas être importé dans du code qui sera exécuté sur le client. Il peut uniquement être importé dans des modules qui seront exécutés sur le serveur :
 
 - `+page.server.js`
 - `+layout.server.js`
 - `+server.js`
-- any modules ending with `.server.js`
-- any modules inside `src/lib/server`
+- tout module se terminant par `.server.js`
+- tout module dans `src/lib/server`
 
-In turn, these modules can only be imported by _other_ server modules.
+De plus, ces modules peuvent uniquement être importés par d'_autres_ modules de serveur.
 
-## Static vs dynamic
+## Statique ou dynamique
 
-The `static` in `$env/static/private` indicates that these values are known at build time, and can be _statically replaced_. This enables useful optimisations:
+Le `static` dans `$env/static/private` indique que ces valeurs sont connues au moment de la compilation, et peuvent être _remplacées de manière statique_. Cela permet des optimisations utiles :
 
 ```js
 /// no-file
 import { FEATURE_FLAG_X } from '$env/static/private';
 
 if (FEATURE_FLAG_X === 'enabled') {
-	// code in here will be removed from the build output
-	// if FEATURE_FLAG_X is not enabled
+	// le code écrit ici sera supprimé du build
+	// si FEATURE_FLAG_X n'est pas activé
 }
 ```
 
-In some cases you might need to refer to environment variables that are _dynamic_ — in other words, not known until we run the app. We'll cover this case in the next exercise.
+Dans certains cas, vous pourriez avoir besoin d'utiliser des variables d'environnement qui sont _dynamiques_ — en d'autres termes, inconnues tant que l'application n'a pas été exécutée. Nous traiterons ce cas dans le prochain exercice.
