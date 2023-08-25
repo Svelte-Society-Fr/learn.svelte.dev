@@ -2,7 +2,7 @@
 title: $env/dynamic/public
 ---
 
-As with [private environment variables](/tutorial/env-static-private), it's preferable to use static values if possible, but if necessary we can use dynamic values instead:
+Comme pour les [variables d'environnement privées](/tutorial/env-static-private), il est préférable d'utiliser des valeurs statiques si possible, mais si nécessaire, nous pouvons utiliser des valeurs dynamiques pour les variables d'environnement publiques :
 
 ```svelte
 /// file: src/routes/+page.svelte
