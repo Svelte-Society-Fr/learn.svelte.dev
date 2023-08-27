@@ -2,7 +2,7 @@
 title: Utiliser la donnée parente
 ---
 
-Comme nous l'avons vu dans l'introduction à la [donnée des layouts](/tutorial/layout-data), les composants `+page.svelte` et `+layout.svelte` ont accès à tout ce qui renvoyé par leurs fonctions `load` parentes.
+Comme nous l'avons vu dans l'introduction à la [donnée des layouts](/tutorial/layout-data), les composants `+page.svelte` et `+layout.svelte` ont accès à tout ce qui est renvoyé par leurs fonctions `load` parentes.
 
 Il est parfois utile que les fonctions `load` elles-mêmes aient accès à la donnée de leurs parents. Cela peut être fait avec `await parent()`.
 

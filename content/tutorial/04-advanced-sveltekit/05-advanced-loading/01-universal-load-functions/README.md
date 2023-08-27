@@ -4,7 +4,7 @@ title: Fonctions load universelles
 
 Dans le [précédent chapitre sur le chargement](page-data), nous avons chargé de la donnée depuis le serveur en utilisant les fichiers `+page.server.js` et `+layout.server.js`. Cette méthode est très pratique si avez besoin de faire des choses comme accéder directement à une base de données, ou lire des cookies.
 
-Parfois, charger de la donnée depuis le serveur lors d'une navigation côté n'a pas vraiment de sens. Par exemple :
+Parfois, charger de la donnée depuis le serveur lors d'une navigation côté client n'a pas vraiment de sens. Par exemple :
 
 - Vous chargez de la donnée depuis une <span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> externe
 - Vous voulez utiliser de la donnée en mémoire du navigateur, si disponible
