@@ -12,7 +12,7 @@
 		<p>{word}</p>
 	{/each}
 
-	<p><a href={next}>{words[depth] ?? '?'}</a></p>
+	<p><a href={next}>{words[depth] ?? '.'}</a></p>
 </div>
 
 <style>
