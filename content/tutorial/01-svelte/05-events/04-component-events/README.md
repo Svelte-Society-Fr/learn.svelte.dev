@@ -2,7 +2,7 @@
 title: Évènements de composant
 ---
 
-Les composants peuvent aussi générer des évènements. Pour cela, ils doivent créer un générateur d'évènements (<span class="vo">[event dispatcher](SVELTE_SITE_URL/docs/javascript#event-dispatcher)</span>). Modifiez `Inner.svelte` de la façon suivante :
+Les composants peuvent aussi générer des évènements. Pour cela, ils doivent créer un générateur d'évènements (<span class="vo">[event dispatcher](SVELTE_SITE_URL/docs/svelte#event-dispatcher)</span>). Modifiez `Inner.svelte` de la façon suivante :
 
 ```svelte
 /// file: Inner.svelte
