@@ -2,9 +2,9 @@
 title: Liaisons d'instance de composant
 ---
 
-De la même façon que vous pouvez créer des liaisons avec les éléments <span class="vo">[DOM](SVELTE_SITE_URL/docs/web#dom)</span>, vous pouvez créer des liaisons avec les instances de composants elles-mêmes en utilisant `bind:this`.
+De la même façon que vous pouvez créer des liaisons avec les éléments <span class="vo">[DOM](PUBLIC_SVELTE_SITE_URL/docs/web#dom)</span>, vous pouvez créer des liaisons avec les instances de composants elles-mêmes en utilisant `bind:this`.
 
-Cela est pratique dans les rares cas où vous avez besoin d'interagir avec un composant programmatiquement (plutôt qu'en lui fournissant de nouvelles <span class="vo">[props](SVELTE_SITE_URL/docs/sveltejs#props)</span>). Revenons à notre application de canvas croisée [il y a quelques exercices](actions). Une fonctionnalité sympa pourrait être d'ajouter un bouton pour effacer l'écran.
+Cela est pratique dans les rares cas où vous avez besoin d'interagir avec un composant programmatiquement (plutôt qu'en lui fournissant de nouvelles <span class="vo">[props](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#props)</span>). Revenons à notre application de canvas croisée [il y a quelques exercices](actions). Une fonctionnalité sympa pourrait être d'ajouter un bouton pour effacer l'écran.
 
 D'abord, exportons une fonction depuis `Canvas.svelte` :
 

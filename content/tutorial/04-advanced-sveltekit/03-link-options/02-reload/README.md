@@ -14,4 +14,4 @@ Dans de rares cas, vous pourriez vouloir désactiver ce comportement. Vous pouve
 </nav>
 ```
 
-Pour plus d'informations sur les options de liens disponibles et leurs valeurs, consultez la [documentation sur les options de liens](KIT_SITE_URL/docs/link-options).
+Pour plus d'informations sur les options de liens disponibles et leurs valeurs, consultez la [documentation sur les options de liens](PUBLIC_KIT_SITE_URL/docs/link-options).

@@ -4,9 +4,9 @@ title: Interpolation
 
 Maintenant que nous avons couvert les bases, il est temps d'apprendre quelques techniques avancées de Svelte, en commençant par la gestion du _mouvement_.
 
-Mettre à jour des valeurs et regarder le <span class="vo">[DOM](SVELTE_SITE_URL/docs/web#dom)</span> s'actualiser automatiquement, c'est plutôt stylé. Vous savez ce qui est encore plus stylé ? _Interpoler_ (<span class="vo">[tween](SVELTE_SITE_URL/docs/svelte-motion#tweened)</span>) entre ces valeurs. Svelte contient des outils pour vous aider à construire des interfaces utilisateur qui utilisent des animations pour mettre en valeur ce qui change.
+Mettre à jour des valeurs et regarder le <span class="vo">[DOM](PUBLIC_SVELTE_SITE_URL/docs/web#dom)</span> s'actualiser automatiquement, c'est plutôt stylé. Vous savez ce qui est encore plus stylé ? _Interpoler_ (<span class="vo">[tween](PUBLIC_SVELTE_SITE_URL/docs/svelte-motion#tweened)</span>) entre ces valeurs. Svelte contient des outils pour vous aider à construire des interfaces utilisateur qui utilisent des animations pour mettre en valeur ce qui change.
 
-Commençons par changer le <span class="vo">[store](SVELTE_SITE_URL/docs/sveltejs#store)</span> `progress` en une valeur interpolée `tweened` :
+Commençons par changer le <span class="vo">[store](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#store)</span> `progress` en une valeur interpolée `tweened` :
 
 ```svelte
 /// file: App.svelte

@@ -26,7 +26,7 @@ export async function DELETE({ params, cookies }) {
 
 Puisque nous n'avons pas besoin de renvoyer de la donnée au navigateur, nous renvoyons un objet [Response](https://developer.mozilla.org/fr/docs/Web/API/Response) vide avec un statut [204 No Content](https://httpstatusdogs.com/204-no-content) (en anglais).
 
-Nous pouvons maintenant interagir avec ce [endpoint](SVELTE_SITE_URL/docs/web#endpoint) dans notre gestionnaire d'évènement :
+Nous pouvons maintenant interagir avec ce [endpoint](PUBLIC_SVELTE_SITE_URL/docs/web#endpoint) dans notre gestionnaire d'évènement :
 
 ```svelte
 /// file: src/routes/+page.svelte

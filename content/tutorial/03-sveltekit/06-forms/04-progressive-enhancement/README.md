@@ -32,7 +32,7 @@ Importez la fonction `enhance` depuis `$app/forms`...
 
 Et c'est tout ! Désormais, lorsque JavaScript est disponible, `use:enhance` va émuler le comportement natif du navigateur sauf pour le rechargement complet de la page. Il va donc :
 
-- mettre à jour la <span class="vo">[prop](SVELTE_SITE_URL/docs/sveltejs#props)</span> `form`
+- mettre à jour la <span class="vo">[prop](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#props)</span> `form`
 - invalider toute la donnée si la soumission est réussie, ce qui va rejouer la fonction `load`
 - naviguer vers la nouvelle page si la réponse est une redirection
 - afficher la page d'erreur la plus proche si une erreur se produit

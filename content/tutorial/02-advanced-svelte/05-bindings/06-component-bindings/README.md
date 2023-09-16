@@ -2,7 +2,7 @@
 title: Liaisons de composant
 ---
 
-De la même façon que vous pouvez créer des liaisons avec les propriétés des éléments <span class="vo">[DOM](SVELTE_SITE_URL/docs/web#dom)</span>, vous pouvez créer des liaisons avec les <span class="vo">[props](SVELTE_SITE_URL/docs/sveltejs#props)</span> des composants. Par exemple, nous pouvons créer une liaison avec la prop de ce composant `<Keypad>` comme si c'était un élément de formulaire :
+De la même façon que vous pouvez créer des liaisons avec les propriétés des éléments <span class="vo">[DOM](PUBLIC_SVELTE_SITE_URL/docs/web#dom)</span>, vous pouvez créer des liaisons avec les <span class="vo">[props](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#props)</span> des composants. Par exemple, nous pouvons créer une liaison avec la prop de ce composant `<Keypad>` comme si c'était un élément de formulaire :
 
 ```svelte
 /// file: App.svelte

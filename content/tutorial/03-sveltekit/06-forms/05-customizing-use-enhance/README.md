@@ -2,7 +2,7 @@
 title: Personnaliser use:enhance
 ---
 
-Avec `use:enhance`, nous pouvons aller plus loin que simplement émuler le comportement natif du navigateur. En fournissant un <span class="vo">[callback](SVELTE_SITE_URL/docs/development#callback)</span>, nous pouvons ajouter des choses comme des **états d'attente** et des **interfaces optimistes**. Simulons un réseau surchargé en ajoutant un délai artificiel à nos deux actions :
+Avec `use:enhance`, nous pouvons aller plus loin que simplement émuler le comportement natif du navigateur. En fournissant un <span class="vo">[callback](PUBLIC_SVELTE_SITE_URL/docs/development#callback)</span>, nous pouvons ajouter des choses comme des **états d'attente** et des **interfaces optimistes**. Simulons un réseau surchargé en ajoutant un délai artificiel à nos deux actions :
 
 ```js
 /// file: src/routes/+page.server.js
@@ -105,5 +105,5 @@ Dans le cas de suppressions, nous n'avons pas vraiment besoin d'attendre que le 
 </ul>
 ```
 
-> `use:enhance` est très personnalisable — vous pouvez annuler (`cancel()`) des soumissions, gérer les redirections, contrôler si le formulaire doit être réinitialiser, entre autres. Voir la [documentation](KIT_SITE_URL/docs/modules#$app-forms-enhance) pour plus de détails.
+> `use:enhance` est très personnalisable — vous pouvez annuler (`cancel()`) des soumissions, gérer les redirections, contrôler si le formulaire doit être réinitialiser, entre autres. Voir la [documentation](PUBLIC_KIT_SITE_URL/docs/modules#$app-forms-enhance) pour plus de détails.
 

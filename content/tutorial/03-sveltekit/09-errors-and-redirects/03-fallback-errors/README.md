@@ -2,7 +2,7 @@
 title: Page de secours
 ---
 
-Si les choses tournent _vraiment_ mal — une erreur pendant le chargement du <span class="vo">[layout](SVELTE_SITE_URL/docs/web#layout)</span> racine, ou pendant le rendu de la page d'erreur — SvelteKit se rabattra sur une page d'erreur statique de secours.
+Si les choses tournent _vraiment_ mal — une erreur pendant le chargement du <span class="vo">[layout](PUBLIC_SVELTE_SITE_URL/docs/web#layout)</span> racine, ou pendant le rendu de la page d'erreur — SvelteKit se rabattra sur une page d'erreur statique de secours.
 
 Ajoutez un nouveau fichier `src/routes/+layout.server.js` pour voir ceci en action :
 

@@ -25,4 +25,4 @@ Nous pouvons toutefois faire mieux. Ajouter ou enlever une classe en fonction d'
 >
 ```
 
-La directive signifie "ajoute la classe `flipped` lorsque `flipped` est <span class="vo">[truthy](SVELTE_SITE_URL/docs/javascript#falsy-truthy-truthy)</span>".
+La directive signifie "ajoute la classe `flipped` lorsque `flipped` est <span class="vo">[truthy](PUBLIC_SVELTE_SITE_URL/docs/javascript#falsy-truthy-truthy)</span>".

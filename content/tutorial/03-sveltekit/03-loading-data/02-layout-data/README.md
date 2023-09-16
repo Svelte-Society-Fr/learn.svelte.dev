@@ -45,6 +45,6 @@ Ajoutons maintenant une barre latérale dans notre page de billet :
 </style>
 ```
 
-Le <span class="vo">[layout](SVELTE_SITE_URL/docs/web#layout)</span> (et les pages en dessous) héritent `data.summaries` du fichier parent `+layout.server.js`.
+Le <span class="vo">[layout](PUBLIC_SVELTE_SITE_URL/docs/web#layout)</span> (et les pages en dessous) héritent `data.summaries` du fichier parent `+layout.server.js`.
 
-Lorsque nous naviguons d'un billet à l'autre, nous avons uniquement besoin de charger la donnée pour le billet lui-même — la donnée de <span class="vo">[layout](SVELTE_SITE_URL/docs/web#layout)</span> est toujours valide. Voir la documentation sur l'[invalidation](KIT_SITE_URL/docs/load#rerunning-load-functions) pour en apprendre plus.
+Lorsque nous naviguons d'un billet à l'autre, nous avons uniquement besoin de charger la donnée pour le billet lui-même — la donnée de <span class="vo">[layout](PUBLIC_SVELTE_SITE_URL/docs/web#layout)</span> est toujours valide. Voir la documentation sur l'[invalidation](PUBLIC_KIT_SITE_URL/docs/load#rerunning-load-functions) pour en apprendre plus.

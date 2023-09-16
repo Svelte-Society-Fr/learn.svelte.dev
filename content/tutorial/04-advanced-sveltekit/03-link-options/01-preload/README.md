@@ -4,7 +4,7 @@ title: Chargement anticipé
 
 Dans cet exercice, les routes `/slow-a` et `slow-b` ont toutes les deux des ralentissements artificiels dans leurs fonctions `load`, ce qui veut dire qu'y accéder prend un temps conséquent.
 
-Vous ne pouvez pas toujours faire en sorte que votre donnée soit chargées rapidement — c'est parfois hors de votre contrôle — mais SvelteKit peut accélérer les navigations en les _anticipant_. Lorsqu'un élément `<a>` a l'attribut `data-sveltekit-preload-data`, SvelteKit va commencer la navigation aussitôt que le lien est survolé (sur <span class="vo">[desktop](SVELTE_SITE_URL/docs/web#desktop)</span>) ou appuie dessus (sur mobile). Essayez d'ajouter cet attribut au premier lien :
+Vous ne pouvez pas toujours faire en sorte que votre donnée soit chargées rapidement — c'est parfois hors de votre contrôle — mais SvelteKit peut accélérer les navigations en les _anticipant_. Lorsqu'un élément `<a>` a l'attribut `data-sveltekit-preload-data`, SvelteKit va commencer la navigation aussitôt que le lien est survolé (sur <span class="vo">[desktop](PUBLIC_SVELTE_SITE_URL/docs/web#desktop)</span>) ou appuie dessus (sur mobile). Essayez d'ajouter cet attribut au premier lien :
 
 ```svelte
 /// file: src/routes/+layout.svelte
@@ -17,7 +17,7 @@ Vous ne pouvez pas toujours faire en sorte que votre donnée soit chargées rapi
 
 Naviguer vers `/slow-a` sera désormais significativement plus rapide. Commencer la navigation au survol ou au toucher (plutôt qu'attendre que l'évènement `click` soit traité) peut ne pas paraître comme une différence notable, mais en pratique cela économise généralement 200 ms, voire plus. C'est suffisant pour faire la différence entre une navigation laborieuse et une navigation rapide.
 
-Vous pouvez mettre l'attribut sur des liens individuels, ou sur tout élément qui _contient_ des liens. Le <span class="vo">[template](SVELTE_SITE_URL/docs/development#template)</span> de projet par défaut fournit cet attribut à l'élément `<body>` :
+Vous pouvez mettre l'attribut sur des liens individuels, ou sur tout élément qui _contient_ des liens. Le <span class="vo">[template](PUBLIC_SVELTE_SITE_URL/docs/development#template)</span> de projet par défaut fournit cet attribut à l'élément `<body>` :
 
 ```html
 /// no-file
@@ -35,7 +35,7 @@ Vous pouvez aller plus dans la personnalisation de ce comportement en précisant
 Utiliser `data-sveltekit-preload-data` peut parfois résulter à des faux positifs — c'est-à-dire charger la donnée en anticipation d'une navigation qui finalement n'arrive jamais — ce qui peut être indésirable. L'alternative `data-sveltekit-preload-code` vous permet de pré-charger le JavaScript requis pour une route donnée sans en charger la donnée. Cet attribut peut avoir les valeurs suivantes :
 
 - `"eager"` — pré-charge tout le contenu de la page à la navigation
-- `"viewport"` — pré-charge tout le contenu au fur-et-à-mesure qu'il apparaît dans le <span class="vo">[viewport](SVELTE_SITE_URL/docs/development#viewport)</span>
+- `"viewport"` — pré-charge tout le contenu au fur-et-à-mesure qu'il apparaît dans le <span class="vo">[viewport](PUBLIC_SVELTE_SITE_URL/docs/development#viewport)</span>
 - `"hover"` (par défaut) comme précédemment
 - `"tap"` — comme précédemment
 - `"off"` — comme précédemment

@@ -4,7 +4,7 @@ title: This
 
 Dans un [exercice précédent](onmount), nous avons vu comment utiliser la méthode de cycle de vie `onMount` pour dessiner dans un `<canvas>`.
 
-Mais l'exemple est [buggué](SVELTE_SITE_URL/docs/development#bug) — il utilise `document.querySelector('canvas')`, qui renvoie toujours le premier `<canvas>` trouvé dans la page, qui pourrait très bien ne pas être celui appartenant à notre composant.
+Mais l'exemple est [buggué](PUBLIC_SVELTE_SITE_URL/docs/development#bug) — il utilise `document.querySelector('canvas')`, qui renvoie toujours le premier `<canvas>` trouvé dans la page, qui pourrait très bien ne pas être celui appartenant à notre composant.
 
 À la place, nous pouvons utiliser la liaison en lecture seule `this` pour obtenir une référence au bon élément :
 

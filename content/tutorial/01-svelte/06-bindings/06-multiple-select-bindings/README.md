@@ -4,7 +4,7 @@ title: Select multiples
 
 Un élément `<select>` peut avoir un attribute `multiple`. Dans ce cas, la liaison va remplir un tableau plutôt que sélectionner une valeur unique.
 
-Remplace les <span class='vo'>[checkboxes](SVELTE_SITE_URL/docs/web#checkbox)</span> par un `<select multiple>`:
+Remplace les <span class='vo'>[checkboxes](PUBLIC_SVELTE_SITE_URL/docs/web#checkbox)</span> par un `<select multiple>`:
 
 ```svelte
 /// file: App.svelte

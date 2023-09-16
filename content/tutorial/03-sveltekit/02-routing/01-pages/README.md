@@ -2,7 +2,7 @@
 title: Pages
 ---
 
-SvelteKit utilise un <span class='vo'>[routing](SVELTE_SITE_URL/docs/web#routing)</span> basé sur l’arborescence de fichiers. Cela signifie que chaque _route_ (page affichée pour une URL donnée) de votre application seront définies par les répertoires de votre code.
+SvelteKit utilise un <span class='vo'>[routing](PUBLIC_SVELTE_SITE_URL/docs/web#routing)</span> basé sur l’arborescence de fichiers. Cela signifie que chaque _route_ (page affichée pour une URL donnée) de votre application seront définies par les répertoires de votre code.
 
 Chaque fichier `+page.svelte` dans le dossier `src/routes` crée une page de votre application. Dans cette application, nous avons actuellement une page — `src/routes/+page.svelte`, qui correspond à `/`. Si nous naviguons sur `/about`, nous verrons une erreur "404 Not Found".
 

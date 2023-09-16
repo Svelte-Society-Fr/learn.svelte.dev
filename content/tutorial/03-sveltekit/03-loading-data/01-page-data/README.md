@@ -5,9 +5,9 @@ path: /blog
 
 Au fond, le boulot de SvelteKit se résume à trois choses :
 
-1. **<span class="vo">[Routing](SVELTE_SITE_URL/docs/web#routing)</span>** — déterminer quelle route correspond à une requête entrante
+1. **<span class="vo">[Routing](PUBLIC_SVELTE_SITE_URL/docs/web#routing)</span>** — déterminer quelle route correspond à une requête entrante
 2. **Chargement** — récupérer la donnée nécessaire à la route
-3. **Rendu** - générer du HTML (sur le serveur) ou mettre à jour le <span class="vo">[DOM](SVELTE_SITE_URL/docs/web#dom)</span> (dans le navigateur)
+3. **Rendu** - générer du HTML (sur le serveur) ou mettre à jour le <span class="vo">[DOM](PUBLIC_SVELTE_SITE_URL/docs/web#dom)</span> (dans le navigateur)
 
 Nous avons déjà vu comment le routing et le rendu fonctionnent. Parlons maintenant de la partie du milieu — le chargement de données.
 
@@ -29,7 +29,7 @@ export function load() {
 
 > Dans le cadre de ce tutoriel, nous importons la donnée depuis `src/routes/blog/data.js`. Dans une vraie application, vous chargeriez plutôt cette donnée depuis une base de données ou un CMS, mais pour le moment nous le faisons de cette manière.
 
-Nous pouvons accéder à cette donnée dans `src/routes/blog/+page.svelte` via la <span class="vo">[prop](SVELTE_SITE_URL/docs/sveltejs#props)</span> `data` :
+Nous pouvons accéder à cette donnée dans `src/routes/blog/+page.svelte` via la <span class="vo">[prop](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#props)</span> `data` :
 
 ```svelte
 /// file: src/routes/blog/+page.svelte

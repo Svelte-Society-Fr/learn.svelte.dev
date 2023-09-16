@@ -2,9 +2,9 @@
 title: page
 ---
 
-Comme nous l'avons appris [précédemment](writable-stores), les <span class="vo">[stores](SVELTE_SITE_URL/docs/sveltejs#store)</span> Svelte sont un endroit pour stocker de la donnée qui n'appartient pas à un composant particulier.
+Comme nous l'avons appris [précédemment](writable-stores), les <span class="vo">[stores](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#store)</span> Svelte sont un endroit pour stocker de la donnée qui n'appartient pas à un composant particulier.
 
-SvelteKit met à disposition trois <span class="vo">[stores](SVELTE_SITE_URL/docs/sveltejs#store)</span> en lecture seule via le module `$app/stores` — `page`, `navigating` et `updated`. Celui que vous utiliserez le plus souvent est [`page`](KIT_SITE_URL/docs/types#public-types-page), qui fournit de l'information à propos de la page courante :
+SvelteKit met à disposition trois <span class="vo">[stores](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#store)</span> en lecture seule via le module `$app/stores` — `page`, `navigating` et `updated`. Celui que vous utiliserez le plus souvent est [`page`](PUBLIC_KIT_SITE_URL/docs/types#public-types-page), qui fournit de l'information à propos de la page courante :
 
 * `url` — l'[URL](https://developer.mozilla.org/fr/docs/Web/API/URL) de la page courante
 * `params` — les [paramètres](params) de la page courante
@@ -14,7 +14,7 @@ SvelteKit met à disposition trois <span class="vo">[stores](SVELTE_SITE_URL/doc
 * `data` — la donnée de la page courante, combinant les valeurs de retour de toutes les fonctions `load`
 * `form` — la donnée renvoyée depuis une [action de formulaire](the-form-element)
 
-Comme avec n'importe quel <span class="vo">[store](SVELTE_SITE_URL/docs/sveltejs#store)</span>, vous pouvez référencer sa valeur dans un composant en préfixant son nom avec le symbole `$`. Par exemple, nous pouvons accéder au chemin courant avec `$page.url.pathname` :
+Comme avec n'importe quel <span class="vo">[store](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#store)</span>, vous pouvez référencer sa valeur dans un composant en préfixant son nom avec le symbole `$`. Par exemple, nous pouvons accéder au chemin courant avec `$page.url.pathname` :
 
 ```svelte
 /// file: src/routes/+layout.svelte

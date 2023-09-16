@@ -2,7 +2,7 @@
 title: L'objet RequestEvent
 ---
 
-L'objet `event` passé à `handle` est le même objet — une instance d'un objet [`RequestEvent`](KIT_SITE_URL/docs/types#public-types-requestevent) — que celui passé dans les [routes d'API](get-handlers) dans les fichiers `+server.js`, dans les [actions de formulaires](the-form-element) des fichiers `+page.server.js`, et dans les fonctions `load` des fichiers `+page.server.js` et `+layout.server.js`.
+L'objet `event` passé à `handle` est le même objet — une instance d'un objet [`RequestEvent`](PUBLIC_KIT_SITE_URL/docs/types#public-types-requestevent) — que celui passé dans les [routes d'API](get-handlers) dans les fichiers `+server.js`, dans les [actions de formulaires](the-form-element) des fichiers `+page.server.js`, et dans les fonctions `load` des fichiers `+page.server.js` et `+layout.server.js`.
 
 Il contient un certain nombre de propriétés et méthodes utiles, dont certaines que nous avons déjà rencontré :
 

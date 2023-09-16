@@ -2,7 +2,7 @@
 title: setContext et getContext
 ---
 
-L'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> de contexte fournit un mécanisme permettant aux composants de communiquer entre eux sans avoir besoin de faire "voyager" la donnée ou les fonctions en tant que props ou générer beaucoup d'évènements. C'est une fonctionnalité avancée, mais utile. Dans cet exercice, nous allons recréer [Schotter] (https://collections.vam.ac.uk/item/O221321/schotter-print-nees-georg/) par George Nees — un des pioniers de l'art génératif — en utilisant l'API de contexte.
+L'<span class="vo">[API](PUBLIC_SVELTE_SITE_URL/docs/development#api)</span> de contexte fournit un mécanisme permettant aux composants de communiquer entre eux sans avoir besoin de faire "voyager" la donnée ou les fonctions en tant que props ou générer beaucoup d'évènements. C'est une fonctionnalité avancée, mais utile. Dans cet exercice, nous allons recréer [Schotter] (https://collections.vam.ac.uk/item/O221321/schotter-print-nees-georg/) par George Nees — un des pioniers de l'art génératif — en utilisant l'API de contexte.
 
 Dans `Canvas.svelte`, il y a une fonction `addItem` qui ajoute un élément au canvas. Nous pouvons la rendre accessible aux composants à l'intérieur de `<Canvas>`, comme `<Square>`, avec `setContext` :
 
@@ -65,9 +65,9 @@ Jusque là, c'est plutôt... ennuyeux. Ajoutons un peu d'aléatoire à la grille
 </div>
 ```
 
-Comme pour les [fonctions de cycle de vie](/tutorial/onmount), `setContext` et `getContext` doivent être appelées pendant l'initialisation du composant. La clé de contexte (`'canvas'` dans ce cas) peut être n'importe quoi, même autre chose qu'une <span class="vo">[string](SVELTE_SITE_URL/docs/development#string)</span>, ce qui est pratique pour contrôler qui a le droit d'accéder au contexte.
+Comme pour les [fonctions de cycle de vie](/tutorial/onmount), `setContext` et `getContext` doivent être appelées pendant l'initialisation du composant. La clé de contexte (`'canvas'` dans ce cas) peut être n'importe quoi, même autre chose qu'une <span class="vo">[string](PUBLIC_SVELTE_SITE_URL/docs/development#string)</span>, ce qui est pratique pour contrôler qui a le droit d'accéder au contexte.
 
-Votre objet de contexte peut inclure n'importe quoi, y compris des <span class="vo">[stores](SVELTE_SITE_URL/docs/sveltejs#store)</span>. Cela vous permet de passer aux composants enfants des valeurs qui peuvent changer au cours du temps :
+Votre objet de contexte peut inclure n'importe quoi, y compris des <span class="vo">[stores](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#store)</span>. Cela vous permet de passer aux composants enfants des valeurs qui peuvent changer au cours du temps :
 
 ```js
 /// no-file

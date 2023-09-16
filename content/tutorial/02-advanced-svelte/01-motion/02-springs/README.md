@@ -4,7 +4,7 @@ title: Ressorts
 
 La fonction `spring` ("ressort" en français) est une alternative à `tweened` qui fonctionne en général mieux pour des valeurs qui changent souvent.
 
-Dans cet exemple, nous avons deux <span class="vo">[stores](SVELTE_SITE_URL/docs/sveltejs#store)</span> — le premier représente les coordonnées du cercle, le deuxième représente sa taille. Transformons-les en ressorts :
+Dans cet exemple, nous avons deux <span class="vo">[stores](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#store)</span> — le premier représente les coordonnées du cercle, le deuxième représente sa taille. Transformons-les en ressorts :
 
 ```svelte
 /// file: App.svelte

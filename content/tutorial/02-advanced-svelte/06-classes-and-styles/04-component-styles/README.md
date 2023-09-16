@@ -25,7 +25,7 @@ Une façon d'y parvenir est d'utiliser le modificateur CSS `:global`, qui vous p
 
 Mais il y a beaucoup de raisons qui incitent à ne _pas_ faire cela. D'une part, c'est très verbeux. D'autre part, c'est fragile — tout changement d'implémentation de `Bos.svelte` pourrait casser le sélecteur.
 
-Mais surtout, c'est malpoli. Les composants devraient être capables de décider par eux-même quels styles peuvent être contrôlés par l'extérieur, de la même façon qu'ils décident quelles variables sont exposées en tant que <span class="vo">[props](SVELTE_SITE_URL/docs/sveltejs#props)</span>. `:global` devrait être uniquement utilisé comme bouée de sauvetage — en dernier recours.
+Mais surtout, c'est malpoli. Les composants devraient être capables de décider par eux-même quels styles peuvent être contrôlés par l'extérieur, de la même façon qu'ils décident quelles variables sont exposées en tant que <span class="vo">[props](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#props)</span>. `:global` devrait être uniquement utilisé comme bouée de sauvetage — en dernier recours.
 
 Dans `Box.svelte`, modifiez `background-color` pour qu'elle soit déterminée par une [propriété CSS personnalisée](https://developer.mozilla.org/fr/docs/Web/CSS/--*) :
 

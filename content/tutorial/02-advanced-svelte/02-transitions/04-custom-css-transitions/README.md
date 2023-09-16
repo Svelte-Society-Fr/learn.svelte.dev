@@ -27,7 +27,7 @@ La fonction prend deux arguments — le noeud auquel la transition est appliqué
 
 La valeur `t` vaut `0` au début d'une entrée ou à la fin d'une sortie, et `1` à la fin d'une entrée ou au début d'une sortie.
 
-La plupart du temps vous devriez renvoyer la propriété `css` et _pas_ la propriété `tick`, car les animations CSS sont exécutées sur un fil d'exécution (<span class="vo">[thread](SVELTE_SITE_URL/docs/development#thread)</span>
+La plupart du temps vous devriez renvoyer la propriété `css` et _pas_ la propriété `tick`, car les animations CSS sont exécutées sur un fil d'exécution (<span class="vo">[thread](PUBLIC_SVELTE_SITE_URL/docs/development#thread)</span>
 ) différent pour éviter au maximum les ralentissements. Svelte "simule" la transition et construit une animation CSS, puis la lance.
 
 Par exemple, la transition `fade` génère une animation CSS qui ressemble à ça :

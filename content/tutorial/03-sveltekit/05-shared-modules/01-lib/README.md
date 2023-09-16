@@ -2,7 +2,7 @@
 title: L'alias $lib
 ---
 
-Parce que SvelteKit utilise un <span class="vo">[routing](SVELTE_SITE_URL/docs/web#routing)</span> basé sur l'architecture de dossiers, il est aisé de placer les modules et les composants au niveau des routes qui les utilisent. Une bonne pratique est de "mettre le code là où il est utilisé".
+Parce que SvelteKit utilise un <span class="vo">[routing](PUBLIC_SVELTE_SITE_URL/docs/web#routing)</span> basé sur l'architecture de dossiers, il est aisé de placer les modules et les composants au niveau des routes qui les utilisent. Une bonne pratique est de "mettre le code là où il est utilisé".
 
 Parfois, du code est utilisé à plusieurs endroits. Lorsque cela arrive, il est pratique d'avoir un endroit pour le ranger qui soit accessible par toutes les routes sans avoir besoin de préfixer les imports par `../../../..`. Dans SvelteKit, cet endroit est le dossier `src/lib`. Tout ce qui se trouve dans ce dossier est accessible par tous les modules dans `src` via l'alias `$lib`.
 

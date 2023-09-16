@@ -2,9 +2,9 @@
 title: Slots nommés
 ---
 
-L'exemple précédent contenait un <span class="vo">[slot](SVELTE_SITE_URL/docs/sveltejs#slot)</span> par défaut, qui affiche l'enfant direct d'une instance de composant. Parfois vous aurez besoin de plus de contrôle sur le positionnement. Dans ces cas-là, nous pouvons utiliser des _slots nommés_.
+L'exemple précédent contenait un <span class="vo">[slot](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#slot)</span> par défaut, qui affiche l'enfant direct d'une instance de composant. Parfois vous aurez besoin de plus de contrôle sur le positionnement. Dans ces cas-là, nous pouvons utiliser des _slots nommés_.
 
-Dans `App.svelte`, nous affichons un composant `<Card>` qui contient un `<span slot="telephone">` et d'autres pour `company` et `address`. Ajoutons les <span class="vo">[slots](SVELTE_SITE_URL/docs/sveltejs#slot)</span> nommés correspondants dans `Card.svelte` :
+Dans `App.svelte`, nous affichons un composant `<Card>` qui contient un `<span slot="telephone">` et d'autres pour `company` et `address`. Ajoutons les <span class="vo">[slots](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#slot)</span> nommés correspondants dans `Card.svelte` :
 
 ```svelte
 /// file: Card.svelte
@@ -22,7 +22,7 @@ Dans `App.svelte`, nous affichons un composant `<Card>` qui contient un `<span s
 </div>
 ```
 
-Nous avons besoin d'ajouter un peu de style à l'élément `<small>` dans `App.svelte` afin qu'il occupe sa propre ligne. Le contenu de `<Card>` hérite des styles de `Card.svelte`, comme `font-family` (le lettrage s'appelle apparemment ['Silian Rail'](https://www.youtube.com/watch?v=aZVkW9p-cCU)),  mais les règles normales de <span class="vo">[scope](SVELTE_SITE_URL/docs/development#scope)</span> s'appliquent — nous avons besoin d'ajouter les styles dans `App.svelte` car c'est là que l'élément est défini :
+Nous avons besoin d'ajouter un peu de style à l'élément `<small>` dans `App.svelte` afin qu'il occupe sa propre ligne. Le contenu de `<Card>` hérite des styles de `Card.svelte`, comme `font-family` (le lettrage s'appelle apparemment ['Silian Rail'](https://www.youtube.com/watch?v=aZVkW9p-cCU)),  mais les règles normales de <span class="vo">[scope](PUBLIC_SVELTE_SITE_URL/docs/development#scope)</span> s'appliquent — nous avons besoin d'ajouter les styles dans `App.svelte` car c'est là que l'élément est défini :
 
 ```svelte
 /// file: App.svelte

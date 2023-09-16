@@ -17,7 +17,7 @@ export function load() {
 
 Naviguer vers la route `/a` nous emmènera maintenant directement vers la route `/b`.
 
-Vous pouvez `throw redirect(...)` dans les fonctions `load`, les actions de formulaire, les routes d'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> et le <span class="vo">[hook](SVELTE_SITE_URL/docs/sveltejs#hook)</span> `handle`, que nous verrons dans un prochain chapitre.
+Vous pouvez `throw redirect(...)` dans les fonctions `load`, les actions de formulaire, les routes d'<span class="vo">[API](PUBLIC_SVELTE_SITE_URL/docs/development#api)</span> et le <span class="vo">[hook](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#hook)</span> `handle`, que nous verrons dans un prochain chapitre.
 
 Les codes de statut les plus courants sont :
 

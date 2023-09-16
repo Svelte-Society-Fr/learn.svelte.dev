@@ -3,6 +3,8 @@
 	import { page } from '$app/stores';
 	import { Icon } from '@sveltejs/site-kit/components';
 
+	import { PUBLIC_LEARN_SITE_URL } from '$env/static/public';
+
 	/** @type {boolean} */
 	export let initial;
 
@@ -43,7 +45,7 @@
 					<p>
 						Si vous avez 'Delete cookies and site data when Firefox is closed' activé dans
 						<code>about:preferences#privacy</code>, faites en sorte que
-						<code>learn.svelte.dev</code> est inclus en tant qu'exception.
+						<code>{PUBLIC_LEARN_SITE_URL}</code> est inclus en tant qu'exception.
 					</p>
 				{:else if /chrome/i.test(navigator.userAgent) && !/edg/i.test(navigator.userAgent)}
 					<p>
@@ -61,8 +63,8 @@
 							/>
 						</svg>
 						dans la barre d'URL ou allez sur
-						<code>chrome://settings/cookies</code> et ajoutez <code>learn.svelte.dev</code> aux 'Sites
-						that can always use cookies'.
+						<code>chrome://settings/cookies</code> et ajoutez <code>{PUBLIC_LEARN_SITE_URL}</code> aux
+						'Sites that can always use cookies'.
 					</p>
 				{:else}
 					<p>

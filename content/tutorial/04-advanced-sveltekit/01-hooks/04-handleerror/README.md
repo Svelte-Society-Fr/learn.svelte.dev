@@ -2,7 +2,7 @@
 title: handleError
 ---
 
-Le <span class="vo">[hook](SVELTE_SITE_URL/docs/sveltejs#hook)</span> `handleError` vous permet d'intercepter des erreurs inattendues et de déclencher des comportements, comme alerter un canal Slack ou envoyer de la donnée vers un service de gestion d'erreur.
+Le <span class="vo">[hook](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#hook)</span> `handleError` vous permet d'intercepter des erreurs inattendues et de déclencher des comportements, comme alerter un canal Slack ou envoyer de la donnée vers un service de gestion d'erreur.
 
 Comme nous l'avons vu dans un [exercice précédent](error-basics), une erreur est _inattendue_ si elle n'a pas été créée avec l'utilitaire `error` de `@sveltejs/kit`. Cela signifie généralement que votre application a besoin d'être réparée. Le comportement par défaut est d'afficher l'erreur :
 

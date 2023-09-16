@@ -4,6 +4,8 @@
 	import Modal from '$lib/components/Modal.svelte';
 	import Menu from './Menu.svelte';
 
+	import { PUBLIC_LEARN_SITE_URL, PUBLIC_GITHUB_ORG } from '$env/static/public';
+
 	/** @type {import('$lib/types').PartStub[]} */
 	export let index;
 
@@ -12,7 +14,7 @@
 
 	const dispatch = createEventDispatcher();
 
-	const namespace = 'learn.svelte.dev';
+	const namespace = PUBLIC_LEARN_SITE_URL;
 	const copy_enabled = `${namespace}:copy_enabled`;
 
 	/** @type {HTMLElement} */
@@ -84,7 +86,7 @@
 			target="_blank"
 			rel="noreferrer"
 			class="edit"
-			href="https://github.com/svelte-society-fr/learn.svelte.dev/tree/french/{exercise.dir}"
+			href="https://github.com/{PUBLIC_GITHUB_ORG}/learn.svelte.dev/tree/french/{exercise.dir}"
 		>
 			Éditer cette page
 		</a>

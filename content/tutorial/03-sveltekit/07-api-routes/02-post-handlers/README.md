@@ -30,7 +30,7 @@ Dans le gestionnaire d'évènement `keydown` de l'`<input>` "ajouter une tâche"
 />
 ```
 
-Ici, nous envoyons du <span class="vo">[JSON](SVELTE_SITE_URL/docs/web#json)</span> à la route d'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> `/todo` — en utilisant `userid` venant des cookies — et recevons l'`id` de la tâche nouvellement créée en réponse.
+Ici, nous envoyons du <span class="vo">[JSON](PUBLIC_SVELTE_SITE_URL/docs/web#json)</span> à la route d'<span class="vo">[API](PUBLIC_SVELTE_SITE_URL/docs/development#api)</span> `/todo` — en utilisant `userid` venant des cookies — et recevons l'`id` de la tâche nouvellement créée en réponse.
 
 Créez la route `/todo` en ajoutant un fichier `src/routes/todo/+server.js` avec une fonction `POST` qui appelle `createTodo` dans `src/lib/server/database.js` :
 

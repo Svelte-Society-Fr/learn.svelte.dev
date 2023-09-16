@@ -2,7 +2,7 @@
 title: Lire et écrire les cookies
 ---
 
-La fonction [`setHeaders`](headers) ne peut pas être utilisée avec le <span class="vo">[header](SVELTE_SITE_URL/docs/web#header)</span> `Set-Cookie`. Vous devez à la place utiliser l'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> `cookies`.
+La fonction [`setHeaders`](headers) ne peut pas être utilisée avec le <span class="vo">[header](PUBLIC_SVELTE_SITE_URL/docs/web#header)</span> `Set-Cookie`. Vous devez à la place utiliser l'<span class="vo">[API](PUBLIC_SVELTE_SITE_URL/docs/development#api)</span> `cookies`.
 
 Dans vos fonctions `load`, vous pouvez lire un cookie avec `cookies.get(name, options)` :
 
@@ -32,9 +32,9 @@ export function load({ cookies }) {
 }
 ```
 
-Si maintenant vous rechargez l'<span class="vo">[iframe](SVELTE_SITE_URL/docs/web#iframe)</span>, `Bonjour étranger !` devient `Bonjour mon ami !`.
+Si maintenant vous rechargez l'<span class="vo">[iframe](PUBLIC_SVELTE_SITE_URL/docs/web#iframe)</span>, `Bonjour étranger !` devient `Bonjour mon ami !`.
 
-Appeler `cookies.set(name, ...)` implique que le <span class="vo">[header](SVELTE_SITE_URL/docs/web#header)</span> `Set-Cookie` est modifié, mais cela met _également_ à jour le dictionnaire interne de cookies, signifiant que les appels suivants à `cookies.get(name)` durant la même requête renverront la valeur à jour. Sous le capot, l'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> `cookies` utilise la libraire populaire `cookie` — les options passées à `cookies.get` et `cookies.set` correspondent aux options de `parse` et `serialize` définies dans la [documentation de la libraire `cookie`](https://github.com/jshttp/cookie#api). SvelteKit utilise les valeurs par défaut suivantes pour rendre vos cookies plus sécurisés :
+Appeler `cookies.set(name, ...)` implique que le <span class="vo">[header](PUBLIC_SVELTE_SITE_URL/docs/web#header)</span> `Set-Cookie` est modifié, mais cela met _également_ à jour le dictionnaire interne de cookies, signifiant que les appels suivants à `cookies.get(name)` durant la même requête renverront la valeur à jour. Sous le capot, l'<span class="vo">[API](PUBLIC_SVELTE_SITE_URL/docs/development#api)</span> `cookies` utilise la libraire populaire `cookie` — les options passées à `cookies.get` et `cookies.set` correspondent aux options de `parse` et `serialize` définies dans la [documentation de la libraire `cookie`](https://github.com/jshttp/cookie#api). SvelteKit utilise les valeurs par défaut suivantes pour rendre vos cookies plus sécurisés :
 
 ```js
 /// no-file

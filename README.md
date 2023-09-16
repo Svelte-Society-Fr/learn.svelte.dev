@@ -32,4 +32,4 @@ Bump the dependency (for example Svelte) in both the root and the `content/commo
 
 ## i18n
 
-You need to add the `SVELTE_SITE_URL` to your environment variables to point to your locale svelte site.
+You need to add the `PUBLIC_SVELTE_SITE_URL`, `PUBLIC_KIT_SITE_URL`, `PUBLIC_LEARN_SITE_URL` and `PUBLIC_GITHUB_ORG` to your environment variables to point to your local svelte sites and Github organization.

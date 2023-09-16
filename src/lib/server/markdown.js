@@ -6,7 +6,12 @@ import 'prism-svelte';
 import { Marked } from 'marked';
 import { escape_html } from '$lib/utils';
 
-import { SVELTE_SITE_URL, KIT_SITE_URL } from '$env/static/private';
+import {
+	PUBLIC_SVELTE_SITE_URL,
+	PUBLIC_KIT_SITE_URL,
+	PUBLIC_LEARN_SITE_URL,
+	PUBLIC_GITHUB_ORG
+} from '$env/static/public';
 
 const languages = {
 	bash: 'bash',
@@ -124,7 +129,11 @@ export async function transform(markdown, options) {
 
 	return (
 		(await marked.parse(
-			markdown.replace(/SVELTE_SITE_URL/g, SVELTE_SITE_URL).replace(/KIT_SITE_URL/g, KIT_SITE_URL)
+			markdown
+				.replace(/PUBLIC_SVELTE_SITE_URL/g, PUBLIC_SVELTE_SITE_URL)
+				.replace(/PUBLIC_KIT_SITE_URL/g, PUBLIC_KIT_SITE_URL)
+				.replace(/PUBLIC_LEARN_SITE_URL/g, PUBLIC_LEARN_SITE_URL)
+				.replace(/PUBLIC_GITHUB_ORG/g, PUBLIC_GITHUB_ORG)
 		)) ?? ''
 	);
 }

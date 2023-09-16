@@ -73,7 +73,7 @@ export const actions = {
 	}
 ```
 
-Dans `src/routes/+page.svelte`, nous pouvons accéder à la valeur renvoyée via la <span class="vo">[prop](SVELTE_SITE_URL/docs/sveltejs#props)</span> `form`, qui n'est remplie qu'après la soumission d'un formulaire :
+Dans `src/routes/+page.svelte`, nous pouvons accéder à la valeur renvoyée via la <span class="vo">[prop](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#props)</span> `form`, qui n'est remplie qu'après la soumission d'un formulaire :
 
 ```svelte
 /// file: src/routes/+page.svelte
@@ -101,4 +101,4 @@ Dans `src/routes/+page.svelte`, nous pouvons accéder à la valeur renvoyée via
 </form>
 ```
 
-> Vous pouvez aussi renvoyer de la donnée depuis une action _sans_ utiliser `fail` — par exemple pour afficher un message "succès !" lorsque la donnée est enregistrée — elle sera également disponible dans la <span class="vo">[prop](SVELTE_SITE_URL/docs/sveltejs#props)</span> `form`.
+> Vous pouvez aussi renvoyer de la donnée depuis une action _sans_ utiliser `fail` — par exemple pour afficher un message "succès !" lorsque la donnée est enregistrée — elle sera également disponible dans la <span class="vo">[prop](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#props)</span> `form`.

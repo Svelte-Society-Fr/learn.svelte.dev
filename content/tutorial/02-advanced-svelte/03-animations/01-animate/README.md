@@ -45,4 +45,4 @@ Le mouvement est un peu lent dans ce cas, nous allons donc ajouter un paramètre
 
 > `duration` peut aussi être une fonction `d => milliseconds`, où `d` est le nombre de pixels que l'élément a à parcourir.
 
-Notez que toutes les transitions et animations sont appliquées en CSS, plutôt qu'en JavaScript, ce qui veut dire qu'elles ne bloquent pas (ou ne sont pas bloquées par) le <span class="vo">[thread](SVELTE_SITE_URL/docs/development#thread)</span> principal.
+Notez que toutes les transitions et animations sont appliquées en CSS, plutôt qu'en JavaScript, ce qui veut dire qu'elles ne bloquent pas (ou ne sont pas bloquées par) le <span class="vo">[thread](PUBLIC_SVELTE_SITE_URL/docs/development#thread)</span> principal.

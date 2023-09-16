@@ -30,5 +30,5 @@ Nous _pourrions_ faire ça avec une séquence de blocs `if`...
 +++<svelte:component this={selected.component}/>+++
 ```
 
-La valeur `this` peut être n'importe quel constructeur de composant, ou une valeur <span class="vo">[falsy](SVELTE_SITE_URL/docs/javascript#falsy-truthy-falsy)</span> — si la valeur est falsy, aucun composant n'est rendu.
+La valeur `this` peut être n'importe quel constructeur de composant, ou une valeur <span class="vo">[falsy](PUBLIC_SVELTE_SITE_URL/docs/javascript#falsy-truthy-falsy)</span> — si la valeur est falsy, aucun composant n'est rendu.
 

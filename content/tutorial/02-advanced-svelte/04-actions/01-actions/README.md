@@ -2,11 +2,11 @@
 title: La directive use
 ---
 
-Les actions sont des fonctions de cycle de vie pour les éléments du <span class="vo">[DOM](SVELTE_SITE_URL/docs/web#dom)</span>. Elles sont utiles dans différents cas, par exemple :
+Les actions sont des fonctions de cycle de vie pour les éléments du <span class="vo">[DOM](PUBLIC_SVELTE_SITE_URL/docs/web#dom)</span>. Elles sont utiles dans différents cas, par exemple :
 
 - s'interfacer avec des librairies tierces
-- gérer le chargement retardé (<span class="vo">[lazy loading](SVELTE_SITE_URL/docs/web#lazy-loading)</span>) des images
-- créer des info-bulles (<span class="vo">[tooltip](SVELTE_SITE_URL/docs/development#tooltip)</span>)
+- gérer le chargement retardé (<span class="vo">[lazy loading](PUBLIC_SVELTE_SITE_URL/docs/web#lazy-loading)</span>) des images
+- créer des info-bulles (<span class="vo">[tooltip](PUBLIC_SVELTE_SITE_URL/docs/development#tooltip)</span>)
 - ajouter des gestionnaires d'évènements personnalisés
 
 Dans cette application, vous pouvez gribouiller sur le `<canvas>`, et changer les couleurs et la taille du pinceau via le menu. Mais si vous ouvrez le menu et faites défiler les options avec la touche Tab, vous vous apercevrez rapidement que le focus _n'est pas conservé_ à l'intérieur de la modale.
@@ -34,7 +34,7 @@ Nous pouvons y remédier avec une action. Importer `trapFocus` de `actions.js` :
 <div class="menu" +++use:trapFocus+++>
 ```
 
-Jetons un coup d'oeil à la fonction `trapFocus` dans `actions.js`. Une fonction d'action est appelée avec un noeud `node` - le `<div class="menu">` dans notre cas - lorsque le noeud est monté dans le <span class="vo">[DOM](SVELTE_SITE_URL/docs/web#dom)</span>, et peut retourner un objet d'action avec une méthode `destroy`.
+Jetons un coup d'oeil à la fonction `trapFocus` dans `actions.js`. Une fonction d'action est appelée avec un noeud `node` - le `<div class="menu">` dans notre cas - lorsque le noeud est monté dans le <span class="vo">[DOM](PUBLIC_SVELTE_SITE_URL/docs/web#dom)</span>, et peut retourner un objet d'action avec une méthode `destroy`.
 
 Tout d'abord, nous devons ajouter un récepteur d'événements qui intercepte les pressions sur les touches de tabulation :
 
