@@ -8,6 +8,8 @@
 	import '@sveltejs/site-kit/styles/index.css';
 	import '../app.css';
 
+	import { PUBLIC_SVELTE_SITE_URL, PUBLIC_KIT_SITE_URL } from '$env/static/public';
+
 	export let data;
 </script>
 
@@ -28,13 +30,13 @@
 		</svelte:fragment>
 
 		<svelte:fragment slot="external-links">
-			<a href="https://svelte.dev">Svelte</a>
+			<a href={PUBLIC_SVELTE_SITE_URL}>Svelte</a>
 
-			<a href="https://kit.svelte.dev">SvelteKit</a>
+			<a href={PUBLIC_KIT_SITE_URL}>SvelteKit</a>
 
 			<Separator />
 
-			<a href="https://svelte.dev/chat" title="Discord Chat">
+			<a href="{PUBLIC_SVELTE_SITE_URL}/chat" title="Discord Chat">
 				<span class="small">Discord</span>
 				<span class="large"><Icon name="discord" /></span>
 			</a>
