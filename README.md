@@ -30,8 +30,8 @@ Tutorials live inside `content`. Each tutorial consists of a `README.md`, which 
 
 Bump the dependency (for example Svelte) in both the root and the `content/common` `package.json`. In the root do `pnpm i` (to update `pnpm-lock.yaml`), in `content/common` do `npm i` (to update `package-lock.json`).
 
-## i18n
+## Translating this project
 
 This is the french version of the Svelte tutorial.
 
-If you are willing to fork this project and translate it into your own language, you will need to add the `PUBLIC_SVELTE_SITE_URL`, `PUBLIC_KIT_SITE_URL`, `PUBLIC_LEARN_SITE_URL` and `PUBLIC_GITHUB_ORG` to your environment variables to point to your local Svelte sites and Github organization.
+Read more about this was done [here](i18n.md).
