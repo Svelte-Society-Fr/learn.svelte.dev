@@ -6,10 +6,10 @@ Dans le [précédent chapitre sur le chargement](page-data), nous avons chargé 
 
 Parfois, charger de la donnée depuis le serveur lors d'une navigation côté client n'a pas vraiment de sens. Par exemple :
 
-- Vous chargez de la donnée depuis une <span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> externe
+- Vous chargez de la donnée depuis une <span class="vo">[API](PUBLIC_SVELTE_SITE_URL/docs/development#api)</span> externe
 - Vous voulez utiliser de la donnée en mémoire du navigateur, si disponible
 - Vous voulez retarder la navigation jusqu'à ce qu'une image ait été chargée, pour éviter de la faire apparaître brusquement
-- Vous avez besoin de renvoyer quelque chose depuis `load` qui ne peut pas être sérialisé (SvelteKit utilise [devalue](https://github.com/Rich-Harris/devalue) pour transformer la donnée du serveur en <span class="vo">[JSON](SVELTE_SITE_URL/docs/web#json)</span>), comme un composant ou un <span class="vo">[store](SVELTE_SITE_URL/docs/sveltejs#store)</span>
+- Vous avez besoin de renvoyer quelque chose depuis `load` qui ne peut pas être sérialisé (SvelteKit utilise [devalue](https://github.com/Rich-Harris/devalue) pour transformer la donnée du serveur en <span class="vo">[JSON](PUBLIC_SVELTE_SITE_URL/docs/web#json)</span>), comme un composant ou un <span class="vo">[store](PUBLIC_SVELTE_SITE_URL/docs/sveltejs#store)</span>
 
 Dans cet exercice, nous avons à faire au dernier cas. Les fonction `load` de serveur dans `src/routes/red/+page.server.js`, `src/routes/green/+page.server.js` et `src/routes/blue/+page.server.js` renvoient un constructeur `component`, qui ne peut pas être sérialisé comme de la donnée. Si vous naviguez vers `/red`, `/green` ou `/blue`, vous verrez apparaître dans le terminal l'erreur "Data returned from `load` ... is not serializable" (_La donnée ... renvoyée par `load` n'est pas sérialisable_).
 
@@ -34,4 +34,4 @@ Nous pouvons maintenant utiliser la valeur `component` renvoyée par ces fonctio
 </nav>
 ```
 
-Rendez-vous dans la [documentation](KIT_SITE_URL/docs/load#universal-vs-server) pour en apprendre plus sur la différence entre une fonction `load` de serveur et une fonction `load` universelle, ainsi que les cas d'usage de chacune.
+Rendez-vous dans la [documentation](PUBLIC_KIT_SITE_URL/docs/load#universal-vs-server) pour en apprendre plus sur la différence entre une fonction `load` de serveur et une fonction `load` universelle, ainsi que les cas d'usage de chacune.

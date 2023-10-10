@@ -2,7 +2,7 @@
 title: $env/static/private
 ---
 
-Les variables d'environnement — comme les clés d'<span class="vo">[API](SVELTE_SITE_URL/docs/development#api)</span> et les informations de connexion à une base de données — peuvent être ajoutées à un fichier `.env`, et seront rendues disponibles dans votre application.
+Les variables d'environnement — comme les clés d'<span class="vo">[API](PUBLIC_SVELTE_SITE_URL/docs/development#api)</span> et les informations de connexion à une base de données — peuvent être ajoutées à un fichier `.env`, et seront rendues disponibles dans votre application.
 
 > Vous pouvez aussi utiliser des fichiers `.env.local` ou `.env.[mode]` — voir la [documentation de Vite](https://vitejs.dev/guide/env-and-mode.html#env-files) (en anglais) pour plus d'informations. Faites bien attention à ajouter les fichiers contenant des informations sensibles à votre fichier `.gitignore` !
 >

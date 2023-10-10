@@ -3,7 +3,7 @@ title: Dépendances personnalisées
 path: /Europe/London
 ---
 
-Appeler `fetch(url)` dans une fonction `load` enregistre `url` comme dépendance de la fonction. Mais ce n'est pas toujours approprié d'utiliser `fetch`, et dans ce cas vous pouvez spécifier une dépendance manuellement avec la fonction [`depends(url)`](KIT_SITE_URL/docs/load#invalidation-manual-invalidation).
+Appeler `fetch(url)` dans une fonction `load` enregistre `url` comme dépendance de la fonction. Mais ce n'est pas toujours approprié d'utiliser `fetch`, et dans ce cas vous pouvez spécifier une dépendance manuellement avec la fonction [`depends(url)`](PUBLIC_KIT_SITE_URL/docs/load#invalidation-manual-invalidation).
 
 Puisque toute chaîne de caractères commançant par `[a-z]+:` est une URL valide, nous pouvons créer des clés d'invalidation personnalisées, comme `data:now`.
 

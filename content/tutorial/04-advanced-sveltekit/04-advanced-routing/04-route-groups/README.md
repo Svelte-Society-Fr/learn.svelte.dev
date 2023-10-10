@@ -2,9 +2,9 @@
 title: Routes groupées
 ---
 
-Comme nous l'avons vu dans l'[introduction sur le routing](/tutorial/layouts), les <span class="vo">[layouts](SVELTE_SITE_URL/docs/web#layout)</span> permettent de partager de l'interface et du chargement de données entre différentes routes.
+Comme nous l'avons vu dans l'[introduction sur le routing](/tutorial/layouts), les <span class="vo">[layouts](PUBLIC_SVELTE_SITE_URL/docs/web#layout)</span> permettent de partager de l'interface et du chargement de données entre différentes routes.
 
-Il est parfois pratique d'utiliser des <span class="vo">[layouts](SVELTE_SITE_URL/docs/web#layout)</span> sans affecter la route — par exemple, vous pourriez avoir besoin que vos routes `/app` et `/account` soient derrière une authentification, tandis que votre page `/about` reste accessible par tout le monde. Vous pouvez faire cela avec un _groupe de routes_, qui est un dossier entre parenthèses.
+Il est parfois pratique d'utiliser des <span class="vo">[layouts](PUBLIC_SVELTE_SITE_URL/docs/web#layout)</span> sans affecter la route — par exemple, vous pourriez avoir besoin que vos routes `/app` et `/account` soient derrière une authentification, tandis que votre page `/about` reste accessible par tout le monde. Vous pouvez faire cela avec un _groupe de routes_, qui est un dossier entre parenthèses.
 
 Créez un groupe `(authed)` en renommant `account` en `(authed)/account` puis renommez `app` en `(authed)/app`.
 
